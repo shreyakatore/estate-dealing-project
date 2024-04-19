@@ -12398,3 +12398,81 @@ padding: 12px;
   background-color: #fff;
   padding: 5%;
 }
+
+
+
+/* length convertor  end*/
+
+/* login section */
+.tab-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #007bff;
+  color: white;
+}
+
+.content {
+  display: none;
+}
+
+input[type="radio"]:checked + label + .content {
+  display: block;
+}
+
+.form-outline {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.btn-floating {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  color: #666;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.social-buttons {
+  margin-top: 20px;
+}
+/* Hide content by default */
+.tab-content .content {
+  display: none;
+}
+
+/* Show active content */
+.tab-content .active {
+  display: block;
+}
+
+/* Smooth transition effect */
+.tab-content .content {
+  transition: opacity 0.5s ease;
+}

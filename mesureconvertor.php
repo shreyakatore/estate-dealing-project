@@ -484,14 +484,18 @@
       
 
     </main>
-    <?php
+      <?php
         include './footer.php';?>
         <!-- main-footer end -->
         <!-- main-footer end -->
 
 
 
-   
+        <!--Scroll to top-->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <span class="fal fa-angle-up"></span>
+        </button>
+        </div>
     <!---------------------footer secton------------------------------------------------------------------------------------------------->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
