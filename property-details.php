@@ -317,18 +317,7 @@
                                                         <div class="title-box">
                                                             <h4>More Details</h4>
                                                         </div>
-                                                        <!-- <ul class="list clearfix">
-                                <li>Property ID: <span>ZOP251C</span></li>
-                                <li>Rooms: <span>06</span></li>
-                                <li>Garage Size: <span>200 Sq Ft</span></li>
-                                <li>Property Price: <span>$30,000</span></li>
-                                <li>Bedrooms: <span>04</span></li>
-                                <li>Year Built: <span>01 April, 2019</span></li>
-                                <li>Property Type: <span>Apertment</span></li>
-                                <li>Bathrooms: <span>03</span></li>
-                                <li>Property Status: <span>For Sale</span></li>
-                                <li>Property Size: <span>2024 Sq Ft</span></li>
-                                <li>Garage: <span>01</span></li>
+                                                      
                             </ul> -->
 
                                                         <table class="table">
@@ -379,25 +368,7 @@
 
 
                                                     </div>
-                                                    <!-- <div class="amenities-box content-widget">
-                            <div class="title-box">
-                                <h4>Amenities</h4>
-                            </div>
-                            <ul class="list clearfix">
-                                <li>Air Conditioning</li>
-                                <li>Cleaning Service</li>
-                                <li>Dishwasher</li>
-                                <li>Hardwood Flows</li>
-                                <li>Swimming Pool</li>
-                                <li>Outdoor Shower</li>
-                                <li>Microwave</li>
-                                <li>Pet Friendly</li>
-                                <li>Basketball Court</li>
-                                <li>Refrigerator</li>
-                                <li>Gym</li>
-                            </ul>
-                        </div> -->
-
+                                                  
                                                 </div>
 
                                             </div>
@@ -565,7 +536,6 @@
                                                         </div>
                                                     </li>
                                                 </ul>
-                                                <!-- <div class="more-btn"><a href="categories.html" class="theme-btn btn-one">All Categories</a></div> -->
                                             </div>
                                         </div>
                                     </section>
@@ -1114,12 +1084,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
-
-
-
                         </section>
 
                         <section class="faq mt-3 p-5">

@@ -241,23 +241,6 @@
             AOS.init();
         </script>
 
-
-
-
-<!-- script for the all the option  -->
-
-        <!-- <script>
-            // Get the select element
-            var selectElement = document.getElementById("developmentAuthority");
-
-            selectElement.addEventListener("change",function(){
-                // Get the selected option
-                var selectedOption = selectElement.options[selectElement.selectedIndex];
-  
-                // Do something with the selected option
-                console.log("Selected option: " + selectedOption.value);
-            });
-        </script> -->
         <script>
             // Get the select elements
             var selectElements = document.querySelectorAll("select[name='developmentAuthority']");

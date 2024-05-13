@@ -8,7 +8,6 @@
 
     <title>Estate Dealings</title>
 
-
     <!-- Fav Icon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
@@ -38,10 +37,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-xzDzGDxR1J2DAJfKW2hPtfXoNJwlxsxprXk07p0JzYg0dJvebEe4Sq6BmFHzW1Rk6H2p/8b2tfnIUhvRGv/V3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 </head>
-
 
 <!-- page wrapper -->
 
@@ -136,7 +132,6 @@
                         <div class="search-wrapper">
                             <div class="homeDesktopSearchBox">
 
-
                                 <input class="RRCity" value="289" name="Ahmedabad" type="hidden">
                                 <input class="NPCity" value="16" name="Ahmedabad" type="hidden">
                                 <div class="searchInputBox">
@@ -191,7 +186,6 @@
             </div>
         </section>
         <!-- banner-section end -->
-
         <section class="cta-section ">
 
             <div class="auto-container bg-color-2" style="padding-top: 15px;
@@ -350,7 +344,6 @@
                             data-wow-duration="1500ms"
                             style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
                             <div class="inner-box">
-
                                 <div class="icon-box"><img src="assets/images/services/1.svg" width="60px"></div>
                                 <h4 class="pay1">Pay on Credit</h4>
                                 <p class="pay">Pay your rent using Credit Card</p>
@@ -484,7 +477,6 @@
                 </div>
             </div>
         </section>
-
         <!-- testimonial-section end -->
         <!-- feature-style-three -->
         <section class="feature-style-three centred pb-110 bp10">

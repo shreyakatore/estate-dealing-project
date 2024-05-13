@@ -51,10 +51,10 @@
                 </div>
                 <div class="auto-container">
                     <div class="content-box clearfix">
-                        <h1>Area Canvertor</h1>
+                        <h1>Length Convertor</h1>
                         <ul class="bread-crumb clearfix">
                             <li><a href="index.html">Home</a></li>
-                            <li>Length Canvertor</li>
+                            <li>Length Convertor</li>
                         </ul>
                     </div>
                 </div>
@@ -326,61 +326,67 @@
                                                     </select>
 
                                                 </div>
+                                                <!-- Add a button to trigger the conversion -->
                                             </div>
+
                                         </div>
                                     </form>
+                                    <div class="text-center my-3">
+    <button id="convertButton" class="btn btn-primary p-2" style="color:#fff;">Convert Units</button>
+</div>
+
 
                                 </div>
 <div  style="color: #007bff;">  
      <h3 class="my-5" style="color: #007bff; font-weight: bold;" >Popular length unit conversions</h3>   
     <div class="row">
        <div class="col-lg-6 col-md-6 col-12" style="text-decoration: underline;">
-           <li><a>cm to inches</a></li>
-           <li><a>mm to inches</a></li>
-           <li><a>meters to feet</a></li>
-           <li><a>km to miles</a></li>
-           <li><a>cm to feet</a></li>
-           <li><a>inches to feet</a></li>
-           <li><a>meters to yards</a></li>
-           <li><a>mm to cm</a></li>
-           <li><a>cm to m</a></li>
-           <li><a>cm to km</a></li>
-           <li><a>mm to feet</a></li>
-           <li><a>meters to miles </a></li>
-           <li><a>feet to miles</a></li>
-           <li><a>yard to feet</a></li>
-           <li><a>inches to meters </a></li>
-           <li><a>mm to m</a></li>
-           <li><a>km to m</a></li>
-           <li><a>inches to yards</a></li>
-           <li><a>yards to miles </a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php" >cm to inches</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">mm to inches</a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php">meters to feet</a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php"> km to miles</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">cm to feet</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">inches to feet</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">meters to yards</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">mm to cm</a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php">cm to m</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php" >cm to km</a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php">mm to feet</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">meters to miles </a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">feet to miles</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">yard to feet</a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php">inches to meters </a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">mm to m</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">km to m</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">inches to yards</a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php">yards to miles </a></li>
 
        </div>
        <div class="col-lg-6 col-md-6 col-12" style="text-decoration: underline;">
-           <li><a>inches to cm</a></li>
-           <li><a>inches to mm</a></li>
-           <li><a>feet to meters</a></li>
-           <li><a>miles to km </a></li>
-           <li><a>feet to cm </a></li>
-           <li><a> feet to inches </a></li>
-           <li><a>yards to meters </a></li>
-           <li><a>cm to mm</a></li>
-           <li><a>m to cm </a></li>
-           <li><a>km to cm</a></li>
-           <li><a> feet to mm</a></li>
-           <li><a>miles to meters </a></li>
-           <li><a>cm to mm</a></li>
-           <li><a>m to cm</a></li>
-           <li><a>km to cm </a></li>
-           <li><a>feet to mm</a></li>
-           <li><a>miles to meters </a></li>
-           <li><a> miles to feet </a></li>
-           <li><a>feet to yards </a></li>
-           <li><a>meters to inches </a></li>
-           <li><a>m to mm</a></li>
-           <li><a>m to km </a></li>
-           <li><a>yards to inches </a></li>
-           <li><a>miles to yards</a></li>
+       <li><a style="color:#007bff;" href="lengthconversion.php">inches to cm</a></li>
+           <li><a  style="color:#007bff;" href= "lengthconversion.php">inches to mm</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">feet to meters</a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php">miles to km </a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">feet to cm </a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php"> feet to inches </a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">yards to meters </a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php">cm to mm</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">m to cm </a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">km to cm</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php"> feet to mm</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">miles to meters </a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php">cm to mm</a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">m to cm</a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php">km to cm </a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">feet to mm</a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php">miles to meters </a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php"> miles to feet </a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">feet to yards </a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">meters to inches </a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php" >m to mm</a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php">m to km </a></li>
+           <li><a style="color:#007bff;" href= "lengthconversion.php">yards to inches </a></li>
+           <li><a style="color:#007bff;"  href= "lengthconversion.php">miles to yards</a></li>
 
        </div>
     </div>
@@ -785,188 +791,187 @@
                         <ol style="list-style-type: disc; margin-top: 2%;">
                             <li>meter [m]</li>
                             <li> 1 kilometer [km] = 1000 meter [m]</li> 
-                            <li> kilometer to meter, meter to kilometer </li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">kilometer to meter, meter to kilometer </a></li>
                             <li> 1 decimeter [dm] = 0.1 meter [m] </li>
-                            <li> decimeter to meter,   meter to decimeter</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">decimeter to meter,   meter to decimeter</a></li>
                             <li> 1 centimeter [cm] = 0.01 meter [m]</li>
-                            <li>  centimeter to meter,   meter to centimeter</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> centimeter to meter,   meter to centimeter</a></li>
                             <li>  1 millimeter [mm] = 0.001 meter [m]</li>
-                            <li> millimeter to meter,   meter to millimeter</li>
+                            <li><a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> millimeter to meter,   meter to millimeter</a></li>
                             <li> 1 micrometer [µm] = 1.0E-6 meter [m] </li>
-                            <li>    micrometer to meter,   meter to micrometer </li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   micrometer to meter,   meter to micrometer </a> </li>
                             <li>    1 nanometer [nm] = 1.0E-9 meter [m]</li>
-                            <li>    nanometer to meter,   meter to nanometer</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   nanometer to meter,   meter to nanometer </a></li>
                             <li>    1 mile [mi, mi(Int)] = 1609.344 meter [m]</li>
-                            <li>    mile to meter,   meter to mile</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  mile to meter,   meter to mile </a></li>
                             <li>    1 yard [yd] = 0.9144 meter [m]</li>
-                            <li>    yard to meter,   meter to yard</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  yard to meter,   meter to yard </a></li>
                             <li>    1 foot [ft] = 0.3048 meter [m]</li> 
-                            <li>    foot to meter,   meter to foot</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   foot to meter,   meter to foot </a></li>
                             <li>    1 inch [in] = 0.0254 meter [m]</li>
-                            <li>    inch to meter,   meter to inch</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   inch to meter,   meter to inch </a></li>
                             <li>    1 light year [ly] = 9.46073047258E+15 meter [m]</li>
-                            <li>        light year to meter,   meter to light year</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">      light year to meter,   meter to light year </a></li>
                             <li>    1 exameter [Em] = 1.0E+18 meter [m] </li>
-                            <li>    exameter to meter,   meter to exameter</li>
+                            <li>   <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> exameter to meter,   meter to exameter </a></li>
                             <li>    1 petameter [Pm] = 1.0E+15 meter [m]</li>
-                            <li>    petameter to meter,   meter to petameter</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   petameter to meter,   meter to petameter </a></li>
                             <li>    1 terameter [Tm] = 1000000000000 meter [m]</li>
-                            <li>    terameter to meter,   meter to terameter</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   terameter to meter,   meter to terameter </a></li>
                             <li>    1 gigameter [Gm] = 1000000000 meter [m]</li>
-                            <li>    gigameter to meter,   meter to gigameter</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   gigameter to meter,   meter to gigameter </a></li>
                              <li>    1 megameter [Mm] = 1000000 meter [m]</li>
-                            <li>    megameter to meter,   meter to megameter </li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   megameter to meter,   meter to megameter  </a></li>
                             <li>    1 hectometer [hm] = 100 meter [m] </li>
-                            <li>    hectometer to meter,   meter to hectometer </li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  hectometer to meter,   meter to hectometer </a></li>
                             <li>    1 dekameter [dam] = 10 meter [m]</li>
-                            <li>    dekameter to meter,   meter to dekameter</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  dekameter to meter,   meter to dekameter </a></li>
                             <li>    1 micron [µ] = 1.0E-6 meter [m]</li>
-                            <li>    micron to meter,   meter to micron </li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   micron to meter,   meter to micron </a> </li>
                             <li>    1 picometer [pm] = 1.0E-12 meter [m] </li>
-                            <li>    picometer to meter,   meter to picometer</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   picometer to meter,   meter to picometer </a></li>
                             <li>    1 femtometer [fm] = 1.0E-15 meter [m]</li>   
-                            <li>    femtometer to meter,   meter to femtometer</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   femtometer to meter,   meter to femtometer</a></li>
                             <li>    1 attometer [am] = 1.0E-18 meter [m]</li>
-                            <li>    attometer to meter,   meter to attometer</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   attometer to meter,   meter to attometer </a></li>
                             <li>    1 megaparsec [Mpc] = 3.08567758128E+22 meter [m]</li>   
-                            <li>    megaparsec to meter,   meter to megaparsec</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  megaparsec to meter,   meter to megaparsec </a></li>
                             <li>    1 kiloparsec [kpc] = 3.08567758128E+19 meter [m]</li>
-                            <li>    kiloparsec to meter,   meter to kiloparsec</li>   
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  kiloparsec to meter,   meter to kiloparsec </a></li>   
                             <li>    1 parsec [pc] = 3.08567758128E+16 meter [m]</li>
-                            <li>    parsec to meter,   meter to parsec</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   parsec to meter,   meter to parsec </a></li>
                             <li>    1 astronomical unit [AU, UA] = 149597870691 meter [m]</li>
-                            <li>    astronomical unit to meter,   meter to astronomical unit</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  astronomical unit to meter,   meter to astronomical unit </a></li>
                             <li>    1 league [lea] = 4828.032 meter [m]</li>
-                            <li>    league to meter,   meter to league</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   league to meter,   meter to league </a></li>
                             <li>    1 nautical league (UK) = 5559.552 meter [m] </li>   
-                            <li>    nautical league (UK) to meter,   meter to nautical league (UK)</li>
+                            <li><a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">    nautical league (UK) to meter,   meter to nautical league (UK) </a></li>
                             <li>    1 nautical league (int.) = 5556 meter [m]</li>
-                            <li>   nautical league (int.) to meter,   meter to nautical league (int.)</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  nautical league (int.) to meter,   meter to nautical league (int.) </a></li>
                             <li>    1 league (statute) [st.league] = 4828.0416560833 meter [m]</li>
-                            <li>    league (statute) to meter,   meter to league (statute)</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  league (statute) to meter,   meter to league (statute) </a></li>
                             <li>    1 nautical mile (UK) [NM (UK)] = 1853.184 meter [m]</li>
-                            <li>    nautical mile (UK) to meter,   meter to nautical mile (UK)</li>   
+                            <li>   <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> nautical mile (UK) to meter,   meter to nautical mile (UK) </a></li>   
                             <li>    1 nautical mile (international) = 1852 meter [m] </li>
-                            <li>    nautical mile (international) to meter,   meter to nautical mile (international)</li>
+                            <li>   <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> nautical mile (international) to meter,   meter to nautical mile (international)</a></li>
                             <li>    1 mile (statute) [mi, mi (US)] = 1609.3472186944 meter [m]</li>
-                            <li>    mile (statute) to meter,   meter to mile (statute)</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  mile (statute) to meter,   meter to mile (statute)</a></li>
                             <li>    1 mile (US survey) [mi] = 1609.3472186944 meter [m]</li>
-                            <li>    mile (US survey) to meter,   meter to mile (US survey)</li>
+                            <li>  ,<a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  mile (US survey) to meter,   meter to mile (US survey) </a></li>
                             <li>    1 mile (Roman) = 1479.804 meter [m]</li>
-                            <li>    mile (Roman) to meter,   meter to mile (Roman) </li>   
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  mile (Roman) to meter,   meter to mile (Roman) </a> </li>   
                             <li>    1 kiloyard [kyd] = 914.4 meter [m]</li>
-                            <li>    kiloyard to meter,   meter to kiloyard</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   kiloyard to meter,   meter to kiloyard </a></li>
                             <li>    1 furlong [fur] = 201.168 meter [m]</li>
-                            <li>    furlong to meter,   meter to furlong</li>
+                            <li>   <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> furlong to meter,   meter to furlong </a></li>
                             <li>    1 furlong (US survey) [fur] = 201.1684023368 meter [m]</li>
-                            <li>    furlong (US survey) to meter,   meter to furlong (US survey) </li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  furlong (US survey) to meter,   meter to furlong (US survey)</a> </li>
                             <li>    1 chain [ch] = 20.1168 meter [m]</li>
-                            <li>    chain to meter,   meter to chain</li>   
+                            <li>   <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> chain to meter,   meter to chain </a></li>   
                             <li>    1 chain (US survey) [ch] = 20.1168402337 meter [m]</li>
-                            <li>    chain (US survey) to meter,   meter to chain (US survey)</li>
+                            <li>   <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> chain (US survey) to meter,   meter to chain (US survey) </a></li>
                             <li>    1 rope = 6.096 meter [m] </li>
-                            <li>    rope to meter,   meter to rope</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  rope to meter,   meter to rope</a></li>
                             <li>    1 rod [rd] = 5.0292 meter [m]</li>
-                            <li>    rod to meter,   meter to rod</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  rod to meter,   meter to rod </a></li>
                             <li>    1 rod (US survey) [rd] = 5.0292100584 meter [m]</li>
-                            <li>    rod (US survey) to meter,   meter to rod (US survey)</li>   
+                            <li>   <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> rod (US survey) to meter,   meter to rod (US survey) </a></li>   
                             <li>    1 perch = 5.0292 meter [m]</li>
-                            <li>    perch to meter,   meter to perch</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  perch to meter,   meter to perch </a></li>
                             <li>    1 pole = 5.0292 meter [m]</li>
-                            <li>    pole to meter,   meter to pole</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   pole to meter,   meter to pole </a></li>
                             <li>    1 fathom [fath] = 1.8288 meter [m]</li>
-                            <li>    fathom to meter,   meter to fathom</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  fathom to meter,   meter to fathom </a></li>
                             <li>    1 fathom (US survey) [fath] = 1.8288036576 meter [m]</li>
-                            <li>    fathom (US survey) to meter,   meter to fathom (US survey)</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  fathom (US survey) to meter,   meter to fathom (US survey) </a></li>
                             <li>    1 ell = 1.143 meter [m]</li>
-                            <li>    ell to meter,   meter to ell</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   ell to meter,   meter to ell </a></li>
                             <li>1 foot (US survey) [ft] = 0.3048006096 meter [m]</li>   
-                            <li>  foot (US survey) to meter,   meter to foot (US survey)</li> 
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> foot (US survey) to meter,   meter to foot (US survey) </a></li> 
                             <li> 1 link [li] = 0.201168 meter [m]</li> 
-                            <li> link to meter,   meter to link</li>
+                            <li><a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> link to meter,   meter to link </a></li>
                             <li> 1 link (US survey) [li] = 0.2011684023 meter [m]</li>
-                            <li>link (US survey) to meter,   meter to link (US survey)</li>  
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">link (US survey) to meter,   meter to link (US survey) </a></li>  
                             <li>1 cubit (UK) = 0.4572 meter [m]</li>
-                            <li> cubit (UK) to meter,   meter to cubit (UK)</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">cubit (UK) to meter,   meter to cubit (UK)</a></li>
                             <li>1 hand = 0.1016 meter [m]</li>     
-                            <li>    hand to meter,   meter to hand</li>    
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  hand to meter,   meter to hand </a></li>    
                             <li> 1 span (cloth) = 0.2286 meter [m]</li>
-                            <li>    span (cloth) to meter,   meter to span (cloth)</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   span (cloth) to meter,   meter to span (cloth) </a></li>
                             <li>    1 finger (cloth) = 0.1143 meter [m]</li>
-                            <li>    finger (cloth) to meter,   meter to finger (cloth)</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   finger (cloth) to meter,   meter to finger (cloth) </a></li>
                             <li>    1 nail (cloth) = 0.05715 meter [m]</li>  
-                            <li>    nail (cloth) to meter,   meter to nail (cloth)</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  nail (cloth) to meter,   meter to nail (cloth) </a></li>
                             <li>    1 inch (US survey) [in] = 0.0254000508 meter [m] </li>
-                            <li>    inch (US survey) to meter,   meter to inch (US survey)</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   inch (US survey) to meter,   meter to inch (US survey) </a></li>
                             <li>   1 barleycorn = 0.0084666667 meter [m]</li>
-                            <li>    barleycorn to meter,   meter to barleycorn</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  barleycorn to meter,   meter to barleycorn</a></li>
                             <li>    1 mil [mil, thou] = 2.54E-5 meter [m]</li>   
-                            <li>    mil to meter,   meter to mil</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   mil to meter,   meter to mil</a></li>
                             <li>    1 microinch = 2.54E-8 meter [m]</li>
-                            <li>    microinch to meter,   meter to microinch</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  microinch to meter,   meter to microinch </a></li>
                             <li>    1 angstrom [A] = 1.0E-10 meter [m]</li>
-                            <li>    angstrom to meter,   meter to angstrom</li>  
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  angstrom to meter,   meter to angstrom </a></li>  
                             <li>    1 a.u. of length [a.u., b] = 5.2917724900001E-11 meter [m]</li>
-                            <li>    a.u. of length to meter,   meter to a.u. of length</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  a.u. of length to meter,   meter to a.u. of length </a></li>
                             <li>    1 X-unit [X] = 1.00208E-13 meter [m]</li>
                            
-                            <li> X-unit to meter,   meter to X-unit</li>   
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> X-unit to meter,   meter to X-unit </a></li>   
                             <li>    1 fermi [F, f] = 1.0E-15 meter [m] </li>
-                            <li>    fermi to meter,   meter to fermi</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   fermi to meter,   meter to fermi </a></li>
                             <li>    1 arpent = 58.5216 meter [m]</li>
-                            <li>    arpent to meter,   meter to arpent</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   arpent to meter,   meter to arpent </a></li>
                             <li>    1 pica = 0.0042333333 meter [m]</li>  
-                            <li>        pica to meter,   meter to pica </li>
+                            <li>   <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  pica to meter,   meter to pica  </a></li>
                             <li>    1 point = 0.0003527778 meter [m]</li>
-                            <li>    point to meter,   meter to point</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  point to meter,   meter to point </a></li>
                             <li>    1 twip = 1.76389E-5 meter [m]</li>
-                            <li>    twip to meter,   meter to twip</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  twip to meter,   meter to twip </a></li>
                             <li>    1 aln = 0.5937777778 meter [m]</li>  
-                            <li>    aln to meter,   meter to aln</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  aln to meter,   meter to aln </a></li>
                             <li>    1 famn = 1.7813333333 meter [m]</li>
-                            <li>    famn to meter,   meter to famn  </li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  famn to meter,   meter to famn </a>  </li>
                             <li>    1 caliber [cl] = 0.000254 meter [m] </li>
-                            <li>    caliber to meter,   meter to caliber</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  caliber to meter,   meter to caliber </a></li>
                             <li>    1 centiinch [cin] = 0.000254 meter [m]</li> 
-                            <li>    centiinch to meter,   meter to centiinch</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  centiinch to meter,   meter to centiinch </a></li>
                             <li>    1 ken = 2.11836 meter [m]</li>  
-                            <li>    ken to meter,   meter to ken</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  ken to meter,   meter to ken </a></li>
                             <li>    1 Russian archin = 0.7112 meter [m]</li>
-                            <li>    Russian archin to meter,   meter to Russian archin</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  Russian archin to meter,   meter to Russian archin </a></li>
                             <li>    1 Roman actus = 35.47872 meter [m]</li>
-                            <li>    Roman actus to meter,   meter to Roman actus</li>
-                            <li>    Roman actus to meter,   meter to Roman actus</li>  
+                            <li>   <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> Roman actus to meter,   meter to Roman actus </a></li>
                             <li>    1 vara de tarea = 2.505456 meter [m]</li>
-                            <li>    vara de tarea to meter,   meter to vara de tarea</li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   vara de tarea to meter,   meter to vara de tarea </a></li>
                             <li>    1 vara conuquera = 2.505456 meter [m]</li>
-                            <li>    vara conuquera to meter,   meter to vara conuquera</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  vara conuquera to meter,   meter to vara conuquera </a></li>
                             <li> 1 vara castellana = 0.835152 meter [m]</li>
-                            <li>    vara castellana to meter,   meter to vara castellana </li>  
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  vara castellana to meter,   meter to vara castellana </a> </li>  
                             <li>    1 cubit (Greek) = 0.462788 meter [m]</li>
-                            <li>    cubit (Greek) to meter,   meter to cubit (Greek)</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  cubit (Greek) to meter,   meter to cubit (Greek) </a></li>
                             <li>    1 long reed = 3.2004 meter [m] </li>
-                            <li>    long reed to meter,  meter to long reed </li>
+                            <li>   <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">  long reed to meter,  meter to long reed </a> </li>
                             <li>    1 reed = 2.7432 meter [m] </li>
-                            <li>    reed to meter,   meter to reed</li>  
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   reed to meter,   meter to reed</a> </li>  
                             <li>    1 long cubit = 0.5334 meter [m]</li>
-                            <li>    long cubit to meter,   meter to long cubit</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   long cubit to meter,   meter to long cubit</a> </li>
                             <li>    1 handbreadth = 0.0762 meter [m]</li>
-                            <li>    handbreadth to meter,   meter to handbreadth</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   handbreadth to meter,   meter to handbreadth</a> </li>
                             <li>    1 fingerbreadth = 0.01905 meter [m]</li>
-                            <li>    fingerbreadth to meter,   meter to fingerbreadth</li>  
+                            <li>    <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> fingerbreadth to meter,   meter to fingerbreadth </a> </li>  
                             <li>    1 Planck length = 1.61605E-35 meter [m]</li>
-                            <li>        Planck length to meter,   meter to Planck length</li>
+                            <li>     <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">    Planck length to meter,   meter to Planck length </a> </li>
                             <li>    1 Electron radius (classical) = 2.81794092E-15 meter [m] </li>
-                            <li>    Electron radius (classical) to meter,   meter to Electron radius (classical) </li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">    Electron radius (classical) to meter,   meter to Electron radius (classical) </a>  </li>
                             <li>    1 Bohr radius [b, a.u.] = 5.2917724900001E-11 meter [m]</li>
-                            <li>    Bohr radius to meter,   meter to Bohr radius </li>  
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   Bohr radius to meter,   meter to Bohr radius  </a></li>  
                             <li>    1 Earth's equatorial radius = 6378160 meter [m] </li>
-                            <li>    Earth's equatorial radius to meter,   meter to Earth's equatorial radius</li>
+                            <li>   <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> Earth's equatorial radius to meter,   meter to Earth's equatorial radius </a></li>
                             <li>    1 Earth's polar radius = 6356776.9999999 meter [m] </li>
-                            <li>    Earth's polar radius to meter,   meter to Earth's polar radius</li>
+                            <li>  <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;">   Earth's polar radius to meter,   meter to Earth's polar radius</a> </li>
                             <li>  1 Earth's distance from sun = 149600000000 meter [m]</li>
-                            <li> Earth's distance from sun to meter,   meter to Earth's distance from sun</li>  
-                            <li> Sun's radius to meter,   meter to Sun's radius </li>
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> Earth's distance from sun to meter,   meter to Earth's distance from sun </a> </li>  
+                            <li> <a href="lengthconversion.php" style="color:#007bff; text-decoration:underline;"> Sun's radius to meter,   meter to Sun's radius </a>  </li>
                             <li> 1 Sun's radius = 696000000 meter [m]</li>
                         
                         </ol>
@@ -994,6 +999,9 @@
     <script src="js/script.js"></script>
     <script>
         AOS.init();
+        // Define an array of unit conversions
+
+
     </script>
 
 
