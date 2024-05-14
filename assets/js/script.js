@@ -1399,26 +1399,6 @@ function hideElements(ids) {
 // Initial call to togglePropertyTypeDropdown to ensure correct initial state
 togglePropertyTypeDropdown();
 
-// Function to handle chip click
-function handleChipClick() {
-// Remove 'selected' class from all chips
-var chips = document.querySelectorAll('.chip');
-chips.forEach(function(chip) {
-	chip.classList.remove('selected');
-});
-
-// Add 'selected' class to the clicked chip
-this.classList.add('selected');
-}
-
-// Add click event listener to chips
-var allChipsContainers = document.querySelectorAll('.chips-container');
-allChipsContainers.forEach(function(container) {
-var chips = container.querySelectorAll('.chip');
-chips.forEach(function(chip) {
-	chip.addEventListener('click', handleChipClick);
-});
-});
 
 // Add event listener to property type dropdown
 document.getElementById("property-type").addEventListener("change", function() {

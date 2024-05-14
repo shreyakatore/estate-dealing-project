@@ -256,11 +256,12 @@
 
                     <div class = "locality" > 
 
-                    <form class="d-flex mt-3">
-    <div class="left-option" style="margin-top: 10%; width: 50%;">
-        <div class="property-form-group">
+                    <form class=" mt-3">
+                    <div class="form-container d-flex">
+    <div class="left-option">
+        <div class="property-form-group mt-2">
             <label for="property-option">City:</label>
-            <select id="property-option" style="width: 100%;">
+            <select id="property-option">
                 <option value="property-pune">Pune</option>
                 <option value="property-mumbai">Mumbai</option>
                 <option value="property-gurgaon">Gurgaon</option>
@@ -268,32 +269,41 @@
             </select>
         </div>
         <div class="property-form-group">
-            <label for="BHK">Landmark / Street</label>
-            <input type="text" name="landmark" id="landmark" placeholder="e.g. Evergreen street" style="width: 100%;">
+            <label for="landmark">Landmark / Street</label>
+            <input type="text" name="landmark" id="landmark" placeholder="e.g. Evergreen street">
         </div>
     </div>
-    <div class="right-option mx-2" style="margin-top: 10%; width: 50%;">
+    <div class="right-option">
+        <div class="property-form-group" style="margin:5px 0px;">
+            <label for="property-locality">Locality</label>
+            <div class="input-with-icon">
+                <input type="text" id="property-locality" placeholder="Enter location/ society name">
+            </div>
+        </div>
         <div class="property-form-group">
-            <label for="property-locality" style="margin-left:5%;">Locality</label>
-            <i class="fas fa-map-marker-alt" id="mapIcon"></i>
-            <input type="text" placeholder="Enter location/ society name" style="padding-left: 2.4rem; width: calc(100% - 2.4rem);">
+            <label for="society-name">Project/ Society Name : </label>
+            <input type="text" name="society-name" id="society-name" placeholder="Project/ Society Name">
+        </div>
+    </div>
+</div>
+
+</form>
+
+<form class="d-flex mt-3" id="flat-apartment-4">
+    <div class="map-property-form-group">
+        <div id="input-container">
+            <input type="text" id="property-location-input" placeholder="Enter location">
+        </div>
+        <div id="map-container" class="mt-3">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.5264464583!2d76.76356335193856!3d28.643684599684324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1711437530741!5m2!1sen!2sin"
+                width="725" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img id="marker-icon" src="https://maps.google.com/mapfiles/ms/icons/red-dot.png" alt="Marker">
         </div>
     </div>
 </form>
 
-                    <div class="property-form-group">
-                        <label for="location">Location:</label>
-                        <form id="locationForm">
-                            <input type="text" id="location" name="location" placeholder="e.g.Mayapuri">
-                            <!-- <button type="submit">Show Map</button> -->
-                        </form>
-                        <div id="map" class="mt-3">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.5264464583!2d76.76356335193856!3d28.643684599684324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1711437530741!5m2!1sen!2sin"
-                                width="725" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
 </div>
              </div>
                 <!-- locality details section end -->
@@ -303,7 +313,7 @@
                     style="background-color: #fff; column-gap: 15px; padding: 3%;">
                     <h1 class="text-center" style="color: #007bff;">Property Details</h1>
 
-        <div class = "Property"  id="plot-land-1"  style="display: none;">
+                 <div class = "Property"  id="plot-land-1"  style="display: none;">
                     
                    <form class="d-flex mt-3 ">
 
@@ -1124,18 +1134,22 @@
 
 </form>
         </div>
-                  <form class ="d-flex mt-3" id = "flat-apartment-4">
-                <div class="property-form-group">
-                    <label>Map Location:</label>
-                    <input type="text" id="property-location-input" placeholder="Enter location">
-                    <div id="map" class="mt-3">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.5264464583!2d76.76356335193856!3d28.643684599684324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1711437530741!5m2!1sen!2sin"
-                                width="725" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                </div>
-                </form>
+        <form class="d-flex mt-3" id="flat-apartment-4">
+    <div class="map-property-form-group">
+        <div id="input-container">
+            <input type="text" id="property-location-input" placeholder="Enter location">
+        </div>
+        <div id="map-container" class="mt-3">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.5264464583!2d76.76356335193856!3d28.643684599684324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1711437530741!5m2!1sen!2sin"
+                width="725" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img id="marker-icon" src="https://maps.google.com/mapfiles/ms/icons/red-dot.png" alt="Marker">
+        </div>
+    </div>
+</form>
+
+
      
 </div>
 
@@ -1375,6 +1389,23 @@ function togglePropertyType(divId) {
 }
 
       </script>
+       <script>
+        // Function to handle chip click
+        function handleChipClick(event) {
+            // Toggle 'selected' class on the clicked chip
+            event.currentTarget.classList.toggle('selected');
+        }
+
+        // Add click event listener to chips
+        var allChipsContainers = document.querySelectorAll('.chips-container');
+        allChipsContainers.forEach(function (container) {
+            var chips = container.querySelectorAll('.chip');
+            chips.forEach(function (chip) {
+                chip.addEventListener('click', handleChipClick);
+            });
+        });
+    </script>
+
 
 <script>
   let uploadedImages = [];

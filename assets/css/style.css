@@ -12233,7 +12233,7 @@ body *{
 }
 /* amenties tab */
 
- .chip-box .chips-container {
+.chip-box .chips-container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -12253,15 +12253,15 @@ body *{
 }
 
 .chip-box .selected {
-  background-color: #007bff; /* Change to the desired color */
-  color: #fff; /* Change to the desired color */
-  border-color: #007bff; /* Change to the desired color */
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
 }
 
-.chip-box .chips-amenties h4{
-color: #007bff;
-font-weight: 600;
-text-decoration: underline;
+.chip-box .chips-amenties h4 {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 /* CSS */
@@ -12350,6 +12350,62 @@ text-decoration: underline;
 
 
 /* amenties tab */
+/* map locality details */
+
+.map-property-form-group {
+  position: relative;
+  width: 100%;
+  max-width: 725px;
+  margin: auto;
+}
+
+#input-container {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#property-location-input {
+  width: 645px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#map-container {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  margin-top: 40px; /* Adjust based on input box height */
+}
+
+#map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#marker-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Allows clicks to pass through to the map */
+}
+
+
+/* map locality details */
+
+
 /**************tab property end********************* */
 /* mayur added  */
 #map iframe{
