@@ -12525,8 +12525,6 @@ body *{
   display: none;
 }
 
-
-
 /* area convertor */
 .convertor{
   padding: 3%;
@@ -12572,8 +12570,6 @@ padding: 12px;
   background-color: #fff;
   padding: 5%;
 }
-
-
 
 /* length convertor  end*/
 
@@ -12663,4 +12659,323 @@ input[type="radio"]:checked + label + .content {
 .centimeter-table th {
   background-color: #007bff;
   color: #fff;
+}
+/* my profile page */
+/* Profile Page Box */
+/* Profile Page Box */
+.profilePageBox {
+  padding: 0 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 9px 23px 0 rgba(0, 0, 0, 0.03);
+  background: #fff;
+  position: relative;
+  border-radius: 8px;
+}
+
+.profilePageBox .profileScoreBox {
+  padding: 0 15px 0 70px;
+  background: #fff;
+  border-radius: 100px 20px 20px 100px;
+  overflow: hidden;
+  position: relative;
+  min-height: 55px;
+  max-width: 340px;
+  box-shadow: -10px 10px 20px 0 rgba(30, 30, 30, 0.05);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Profile Data */
+.profilePageBox .profileData {
+  padding: 3%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #f5f2fa;
+  min-height: 127px;
+}
+
+/* Profile Data Figure Box */
+.profileData .figureBox picture span {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #ccc;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Profile Data Rating */
+.withRating h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.cityName {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+  font-size: 1em;
+}
+
+/* Profile Completeness Score Box */
+.profileScoreBox {
+  margin-top: 20px;
+}
+
+.profileScoreBox .progressBox {
+  position: relative;
+}
+
+.profileScoreBox .progressBox .bar svg {
+  width: 100%;
+  height: 100%;
+}
+
+.profileScoreBox h4 {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.profileScoreBox span {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+}
+
+/* Profile Details Box */
+.profileDetailsBox {
+  display: block;
+}
+
+.profileDetailsBox .tabBox {
+  margin: 0 -20px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-top: 1px solid #f3f3f5;
+}
+
+.profileDetailsBox .tabBox ul {
+  margin: 0 0 0 3%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  border-bottom: 1px solid #f3f3f5;
+}
+
+.profileDetailsBox .tabBox ul li {
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.profileDetailsBox .tabBox ul li.active {
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+}
+
+/* Profile White Box */
+.profileWhiteBox {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.profileWhiteBox .row {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profileWhiteBox .form-group {
+  margin-bottom: 15px;
+}
+
+.profileWhiteBox .form-group label {
+  display: block;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.profileWhiteBox .form-group strong {
+  display: block;
+  font-weight: normal;
+  color: #333;
+}
+
+.verified {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0.875em;
+  color: green;
+}
+
+.verified .icon-check {
+  font-size: 0.875em;
+  color: green;
+}
+
+/* Tab Content Box */
+.profileDetailsBox .tabContentBox {
+  padding: 20px 0 0;
+  display: none;
+}
+
+.profileDetailsBox .tabContentBox.active {
+  display: block;
+}
+
+/* Button Box */
+.profilePageBox .btnBox {
+  padding-bottom: 20px;
+  display: block;
+}
+
+.profilePageBox .btnBox .btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 1.3%;
+}
+
+.profilePageBox .btnBox .btn:hover {
+  background-color: #0056b3;
+}
+
+.profilePageBox .btnBox .btn em {
+  margin-left: 5px;
+}
+
+.profilePageBox .profileScoreBox .progressBox {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.profilePageBox .profileScoreBox .progressBox .bar {
+  width: 55px;
+  height: 55px;
+  display: block;
+  position: relative;
+  color: #fff;
+}
+
+.profilePageBox .profileScoreBox .progressBox svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+}
+
+.profilePageBox .profileScoreBox h4 {
+  margin-bottom: 3px;
+  color: #4a4a4a;
+  line-height: normal;
+}
+
+.profilePageBox .profileScoreBox span {
+  color: rgba(74, 74, 74, .8);
+  line-height: normal;
+  font-size: 12px;
+}
+
+.clr24 {
+  background: #a969ca;
+}
+
+.profilePageBox h1 {
+  padding: 15px;
+  border-bottom: 1px solid rgba(74, 74, 74, .1);
+}
+.tabContentBox {
+  display: none; /* Hide all tab content boxes */
+}
+
+.tabContentBox.active {
+  display: block; /* Show only the active tab content box */
+}
+
+.tabBox ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.tabBox ul li {
+  cursor: pointer;
+  padding: 10px;
+  color: #000;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+}
+
+.tabBox ul li.active {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+.figureBox {
+  position: relative;
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5; /* Background color for the placeholder */
+}
+
+#profileImage {
+  width: 135px;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: none;
+}
+
+.clr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 50px; /* Adjust font size as needed */
+  color: #fff; /* Placeholder text color */
+  background-color: #007bff; /* Placeholder background color */
+  border-radius: 50%;
+}
+
+.camera-icon {
+  position: absolute;
+  right: 23px;
+  bottom: 35px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.camera-icon i {
+  font-size: 16px; /* Adjust icon size as needed */
 }

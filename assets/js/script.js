@@ -1409,3 +1409,21 @@ togglePropertyTypeDropdown(); // Call togglePropertyTypeDropdown to handle prope
 togglePropertyTypeDropdown();
 
 
+////// profile image page
+document.getElementById('imageUpload').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+      const imgElement = document.getElementById('profileImage');
+      const placeholder = document.getElementById('initialPlaceholder');
+      
+      imgElement.src = e.target.result;
+      imgElement.style.display = 'block';
+      placeholder.style.display = 'none';
+    };
+
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  });
