@@ -12201,8 +12201,7 @@ body *{
 
 .tab-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around; /* Ensure space is evenly distributed */
   margin-bottom: 20px;
 }
 
@@ -12212,11 +12211,13 @@ body *{
 
 .tab-container label {
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 10px;
   margin: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #f7f7f7;
+  flex: 1; /* Make each label take equal space */
+  text-align: center; /* Center the text inside the label */
 }
 
 .tab-container input[type="radio"]:checked + label {
@@ -12231,6 +12232,33 @@ body *{
 .property-form-group {
   margin: 20px 0;
 }
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  position: relative;
+}
+
+
+.button-container .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-container .previous-btn {
+  background-color: #007bff; /* Primary color */
+  color: #fff;
+}
+
+.button-container .next-btn {
+  background-color: #007bff; /* Primary color */
+  color: #fff;
+}
+
+
 /* amenties tab */
 
 .chip-box .chips-container {
@@ -12265,7 +12293,7 @@ body *{
 }
 
 /* CSS */
-
+/* image gallery details */
 .photo-container {
   max-width: 800px; /* Adjusted max-width */
   margin: 20px auto; /* Centered the container */
@@ -12274,81 +12302,57 @@ body *{
   border-radius: 10px;
   text-align: center;
 }
-
 .photo-icon {
-  font-size: 46px; /* Large icon size */
+  font-size: 50px;
 }
 
-#fileInput {
-  display: block;
-  margin: 10px auto;
-}
-
-#uploadedImages,
-#imagePreview,
-#videoPreview {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#uploadedImages .uploaded-image,
-#imagePreview .preview-image,
-#videoPreview .preview-video,
-#uploadedVideos .uploaded-video {
-  max-width: 160px;
-  max-height: 160px;
-  margin: 3%;
-}
-
-.image-container {
-  position: relative;
-  margin: 5px;
-}
-
-.image-dropdown {
-  position: absolute;
-  bottom: -25px; /* Adjust as needed */
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.preview-image,
-.preview-video {
-  max-width: 160px;
-  max-height: 160px;
-  margin: 3%;
-}
-
-#previewWrapper {
-  display: flex;
-  justify-content: center;
-}
-.dropdown-options {
-  width: 100px; /* Adjust width as needed */
-  height: 30px; /* Adjust height as needed */
-  padding: 5px; /* Adjust padding as needed */
-}
-
-#uploadButton {
-  background-color: #007bff; /* Primary color */
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
+.preview-media-wrapper {
+  width: 160px;
+  height: 145px;
+  overflow: hidden;
   display: inline-block;
-  font-size: 16px;
-  margin-top: 10px;
+  margin: 5px;
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 5px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.preview-media {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.dropdown-options {
+  display: block;
+  margin-top: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.delete-button {
+  background:  #007bff;
+  color: white;
+  border: none;
   cursor: pointer;
-  border-radius: 5px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
-#uploadButton:hover {
-  background-color: #0056b3; /* Darken the color slightly on hover */
+.cover-badge {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: green;
+  color: white;
+  padding: 2px 5px;
+  font-size: 12px;
+  border-radius: 3px;
 }
-
-
 /* amenties tab */
 /* map locality details */
 
@@ -12404,6 +12408,86 @@ body *{
 
 
 /* map locality details */
+
+/* builder info */
+.add-builder-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  padding: 0%;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-container .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-container .previous-btn,
+.button-container .next-btn {
+  background-color: #007bff; /* Primary color */
+  color: #fff;
+}
+
+#new-builder-description {
+  height: 80px; /* Set height of textarea */
+}
+/* owner details tab */
+.owner-tabbox {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.owner-tabbox .tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #e9ecef;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+}
+
+.owner-tabbox .tab:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.owner-tabbox .active-tab {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active-content {
+  display: block;
+}
 
 
 /**************tab property end********************* */
@@ -12574,33 +12658,66 @@ padding: 12px;
 /* length convertor  end*/
 
 /* login section */
-.tab-wrapper {
+
+.signup-tab-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 20px;
+  border-radius: 4px;
+  padding: 10px;
 }
 
-.tab {
-  padding: 10px 20px;
-  margin: 0 10px;
-  background-color: #f7f7f7;
+.signup-tab-wrapper .tab {
   cursor: pointer;
+  padding: 10px 20px;
+  margin: 5px;
   border: 1px solid #ccc;
-  transition: background-color 0.3s;
+  border-radius: 4px;
+  background-color: #e9ecef;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
 }
-/* 
-input[type="radio"] {
-  display: none;
-} */
 
-/* input[type="radio"]:checked + label {
+.signup-tab-wrapper .tab:hover {
   background-color: #007bff;
-  color: white;
-} */
+  color: #fff;
+  border-color: #007bff;
+}
 
-.content {
+.signup-tab-wrapper .active-tab {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.tab-content {
   display: none;
 }
+
+.tab-content.active-content {
+  display: block;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-container .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-container .previous-btn,
+.button-container .next-btn {
+  background-color: #007bff; /* Primary color */
+  color: #fff;
+}
+
 
 input[type="radio"]:checked + label + .content {
   display: block;

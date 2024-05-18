@@ -1408,22 +1408,30 @@ togglePropertyTypeDropdown(); // Call togglePropertyTypeDropdown to handle prope
 // Initial call to togglePropertyTypeDropdown to ensure correct initial state
 togglePropertyTypeDropdown();
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to handle the save builder button click
+    function saveBuilder() {
+        var builderName = document.getElementById('new-builder-name').value;
+        var builderSelect = document.getElementById('builder-select');
 
-////// profile image page
-document.getElementById('imageUpload').addEventListener('change', function(event) {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-
-    reader.onload = function(e) {
-      const imgElement = document.getElementById('profileImage');
-      const placeholder = document.getElementById('initialPlaceholder');
-      
-      imgElement.src = e.target.result;
-      imgElement.style.display = 'block';
-      placeholder.style.display = 'none';
-    };
-
-    if (file) {
-      reader.readAsDataURL(file);
+        if (builderName) {
+            var newOption = document.createElement('option');
+            newOption.value = builderName.toLowerCase().replace(/\s+/g, '-');
+            newOption.textContent = builderName;
+            builderSelect.appendChild(newOption);
+            
+            // Reset and close modal
+            document.getElementById('new-builder-form').reset();
+            var modal = bootstrap.Modal.getInstance(document.getElementById('addBuilderModal'));
+            modal.hide();
+        }
     }
-  });
+
+    // Add event listener to the save builder button
+    document.getElementById('save-builder-btn').addEventListener('click', saveBuilder);
+});
+
+// //// owner details tabbox
+
+  ////// gallery details
+  

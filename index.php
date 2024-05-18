@@ -700,22 +700,16 @@
             </div>
         </section>
         <!-- download-section end -->
-
-
         <!-- main-footer -->
       
         <?php
         include './footer.php';?>
         <!-- main-footer end -->
-
-
-
         <!--Scroll to top-->
         <button class="scroll-top scroll-to-target" data-target="html">
             <span class="fal fa-angle-up"></span>
         </button>
     </div>
-
 
     <!-- jequery plugins -->
     <script src="assets/js/jquery.js"></script>

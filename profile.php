@@ -51,7 +51,7 @@
         <section class="my-profile">
   <div class="container">
   <div class="profilePageBox">
-      <h1>My Profile</h1>
+      <h3 class ="mt-5 text-bold text-primary">My Profile</h3>
       <div class="profileData">
 
       <figure class="figureBox">
@@ -73,12 +73,7 @@
        
    
       <div class="profileDetailsBox">
-        <div class="tabBox">
-          <ul>
-            <li class="active" id="profileTab">Personal Details</li>
-            <li id="testimonialTab">Property Requirement</li>
-            <li id="interactionsTab">Employment Details</li>
-          </ul>
+     <h4 class ="text-primary text-bold mx-3"> Profile Details </h4>
         </div>
         <div class="tabContentBox profileTab active">
           <div class="profileWhiteBox noPad">
@@ -97,12 +92,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div class="form-group">
-                  <label>Date of Birth</label>
-                  <strong>-</strong>
-                </div>
-              </div>
+             
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="form-group">
                   <label>Email Address</label>
@@ -117,93 +107,16 @@
                   <strong>Nagpur</strong>
                 </div>
               </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div class="form-group">
-                  <label>Pin Code</label>
-                  <strong>-</strong>
-                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-xl-12 col-sm-12">
-                <div class="form-group">
-                  <label>Languages</label>
-                  <strong>-</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tabContentBox testimonialTab">
-          <div class="profileWhiteBox noPad">
-            <div class="row">
-              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <div class="form-group">
-                  <label>Purchasing for?</label>
-                  <strong>-</strong>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <div class="form-group">
-                  <label>Property Status</label>
-                  <strong>-</strong>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <div class="form-group radioBox">
-                  <label>Investment Amount Will Be</label>
-                  <strong>-</strong>
-                </div>
-              </div>
-            </div>
-        
-          </div>
-        </div>
-        <div class="tabContentBox interactionsTab">
-          <div class="profileWhiteBox noPad">
-            <div class="row">
-              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <div class="form-group">
-                  <label>Your Employment Type</label>
-                  <strong>-</strong>
-                </div>
-              </div>
-              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <div class="form-group">
-                  <label>Your Designation</label>
-                  <strong>-</strong>
-                </div>
-              </div>
-              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <div class="form-group">
-                  <label>Your Company Name</label>
-                  <strong>-</strong>
-                </div>
-              </div>
-              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <div class="form-group">
-                  <label>Income</label>
-                  <strong>-</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="btnBox">
+              <div class="btnBox">
         <button type="button" class="btn btn-primary Profile_Edit_Profile" id="editFormBtn">Edit Profile <em class="icon-angle-right"></em></button>
       </div>
     </div>
   </div>
 </section>
-
-     <!-- main-footer -->
+  <!-- main-footer -->
       
-     <?php
+  <?php
         include './footer.php';?>
         <!-- main-footer end -->
         <!--Scroll to top-->
@@ -230,27 +143,6 @@
 
     <!-- main-js -->
     <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('.tabBox ul li');
-    const tabContentBoxes = document.querySelectorAll('.tabContentBox');
-
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        // Remove active class from all tabs
-        tabs.forEach(tab => tab.classList.remove('active'));
-        
-        // Add active class to the clicked tab
-        tab.classList.add('active');
-        
-        // Hide all tab content boxes
-        tabContentBoxes.forEach(box => box.classList.remove('active'));
-        
-        // Show the content box corresponding to the clicked tab
-        const tabId = tab.id;
-        document.querySelector(`.${tabId}`).classList.add('active');
-      });
-    });
-
     // Profile image page
     document.getElementById('fileInput').addEventListener('change', function(event) {
       const file = event.target.files[0];
@@ -266,7 +158,7 @@
         reader.readAsDataURL(file);
       }
     });
-  });
+
 </script>
 
 

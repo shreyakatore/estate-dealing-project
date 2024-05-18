@@ -40,27 +40,24 @@
     <!--------------------------------------------------------------------------------------->
     <?php
         include './header.php';?>
-        <main id="main">
+    <main id="main">
 
-    <!-- Section: Design Block -->
-   
+        <!-- Section: Design Block -->
 
 
-<section class="login p-5">
-    <div class="container bg-white">
-        <div class="container-body py-5 px-md-5">
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="fw-bold mb-5 text-primary text-center text-bold" style="text-transform: capitalize">Sign up now</h2>
-                    <div class="tab-wrapper">
-                        <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
-                        <label for="tab-1" class="tab">Owner</label>
-                        <input id="tab-2" type="radio" name="tab" class="sign-up">
-                        <label for="tab-2" class="tab">Broker/Builder</label>
-                    </div>
-                    <form>
-                        <div class="tab-content">
-                            <div id="content-1" class="content active">
+        <section class="login p-5">
+        <div class="container bg-white">
+            <div class="container-body py-5 px-md-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold mb-5 text-primary text-center text-bold"
+                            style="text-transform: capitalize">Sign up now</h2>
+                        <div class="signup-tab-wrapper">
+                            <label for="signup-tab-1" class="tab active-tab">Owner</label>
+                            <label for="signup-tab-2" class="tab">Broker/Builder</label>
+                        </div>
+                        <form>
+                            <div id="signup-tab-1-content" class="tab-content active-content">
                                 <!-- Owner Details Form Section -->
                                 <div class="form-section mt-5">
                                     <div class="row">
@@ -107,7 +104,7 @@
                                             <i class="fab fa-facebook-f" style="position:relative; bottom:7px; right:2px;"></i>
                                         </button>
                                         <button type="button" class="btn btn-link btn-floating mx-1">
-                                            <i class="fab fa-google"style="position:relative; bottom:7px; right:2px;"></i>
+                                            <i class="fab fa-google" style="position:relative; bottom:7px; right:2px;"></i>
                                         </button>
                                         <button type="button" class="btn btn-link btn-floating mx-1">
                                             <i class="fab fa-twitter" style="position:relative; bottom:7px; right:2px;"></i>
@@ -115,10 +112,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="content-2" class="content">
+                            <div id="signup-tab-2-content" class="tab-content">
                                 <!-- Broker/Builder Details Form Section -->
                                 <div class="form-section mt-5">
-                                    <div class="row ">
+                                    <div class="row">
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
                                                 <input type="text" id="broker-first-name" class="form-control" />
@@ -140,7 +137,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-4">
-                                            <div the="form-outline">
+                                            <div class="form-outline">
                                                 <input type="text" id="broker-contact-number" class="form-control" />
                                                 <label class="form-label" for="broker-contact-number">Contact Number</label>
                                             </div>
@@ -158,7 +155,7 @@
                                 <div class="text-center">
                                     <p>or sign up with:</p>
                                     <div class="social-buttons">
-                                    <button type="button" class="btn btn-link btn-floating mx-1">
+                                        <button type="button" class="btn btn-link btn-floating mx-1">
                                             <i class="fab fa-facebook-f" style="position:relative; bottom:7px; right:2px;"></i>
                                         </button>
                                         <button type="button" class="btn btn-link btn-floating mx-1">
@@ -169,42 +166,63 @@
                                         </button>
                                     </div>
                                 </div>
-<!-- Section: Design Block -->
-        </main>
-        
-        
-        <?php
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Section: Design Block -->
+    </main>
+
+
+    <?php
         include './footer.php';?>
-        
-        <!---------------------footer secton------------------------------------------------------------------------------------------------->
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="js/script.js"></script>
-        <script>
+
+    <!---------------------footer secton------------------------------------------------------------------------------------------------->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
             AOS.init();
-       // Get all tabs and tab content
-const tabs = document.querySelectorAll('.tab');
-const tabContents = document.querySelectorAll('.content');
 
-// Add click event listeners to tabs
-tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
-        // Remove 'active' class from all tabs and tab contents
-        tabs.forEach((tab) => tab.classList.remove('active'));
-        tabContents.forEach((content) => content.classList.remove('active'));
+            const tabs = document.querySelectorAll('.signup-tab-wrapper .tab');
+            const tabContents = document.querySelectorAll('.tab-content');
 
-        // Add 'active' class to the clicked tab and corresponding content
-        tab.classList.add('active');
-        tabContents[index].classList.add('active');
-    });
-});
+            // Function to switch tabs
+            function switchTab() {
+                const targetId = this.getAttribute('for');
+                const targetContent = document.querySelector(`#${targetId}-content`);
 
-        </script>
-        
-        </body>
-        </html>
+                // Remove active classes from all tabs and contents
+                tabs.forEach(tab => tab.classList.remove('active-tab'));
+                tabContents.forEach(content => content.classList.remove('active-content'));
+
+                // Add active class to the clicked tab and corresponding content
+                this.classList.add('active-tab');
+                if (targetContent) {
+                    targetContent.classList.add('active-content');
+                }
+            }
+
+            // Add click event listeners to tab labels
+            tabs.forEach(tab => {
+                tab.addEventListener('click', switchTab);
+            });
+
+            // Trigger click on the initially checked radio button to show its content
+            document.querySelector('.signup-tab-wrapper input:checked + .tab').click();
+        });
+
+    </script>
+
+</body>
+
+</html>
