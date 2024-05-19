@@ -127,7 +127,6 @@
                                     </div>
                                 </div>
 
-
                                 <!-- Dynamic Sections Based on Property Available For Selection -->
                                 <div id="sellDiv" class="Property-available-for my-5" style="display: none;">
                                     <div class="property-form-group">
@@ -136,8 +135,8 @@
                                             onchange="togglePropertyTypeDropdown()">
                                             <option value="flat_apartment">Flat/Apartment</option>
                                             <option value="plot_land">Plot/land</option>
-                                            <option>Residential Villa</option>
-                                            <option>Builder Floor Apartment</option>
+                                            <option value="Residential_Villa">Residential Villa</option>
+                                            <option value="Builder">Builder Floor Apartment</option>
                                             <option>Penthouse</option>
                                             <option>1 RK / Studio Apartment</option>
                                             <option>Service Apartment</option>
@@ -323,21 +322,18 @@
                 <!-- locality details section end -->
 
                 <!-- property details section starts-->
-                <div class="col-lg-8 col-md-6 col-12 properyInputInfo d-none" id="propertyDetails"
+                <div class="col-lg-8 col-md-6 col-12 propertydiv d-none" id="propertyDetails"
                     style="background-color: #fff; column-gap: 15px; padding: 3%;">
                     <h1 class="text-center" style="color: #007bff;">Property Details</h1>
 
-                    <div class="Property" id="plot-land-1" style="display: none;">
+                    <div class="Property" id="plot-land-1"  >
 
                         <form class="d-flex mt-3 ">
 
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="left-option" style="margin-top: 10%;">
-                                        <div class="property-form-group">
-                                            <label for="property-option">Project/Society name</label>
-                                            <input type="text">
-                                        </div>
+                                       
 
                                         <div class="property-form-group">
                                             <label for="plot-no">Plot No.</label>
@@ -598,8 +594,7 @@
                         </form>
                     </div>
 
-                    <form id="flat-apartment-1" style="display: block;">
-
+                    <form id="flat-apartment-1" style="display: none;">
                         <div class="flat-apartment" id="flat_apartment_property">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
@@ -639,9 +634,15 @@
                                             <input type="text" id="Balcony" style="padding-right: 4rem;"> </input>
                                         </div>
                                         <div class="property-form-group">
+                                            <label for="unitfloor">No of units on each floor</label>
+                                            <input type="text" id="unitfloor" name="unitfloor"
+                                                style="padding-right: 4rem;">
+                                        </div>
+
+                                        <div class="property-form-group">
                                             <label for="BHK">Description</label>
-                                            <input type="textarea" id="Description" style="padding-right: 4rem;">
-                                            </input>
+                                            <textarea id="description-Built-text"
+                                                style="padding-right: 4rem; border: 2px solid #ccc; width: 100%; height: 100%;"></textarea>                                            </input>
                                         </div>
 
                                         <div class="property-form-group">
@@ -708,7 +709,7 @@
 
                                     <div class="property-form-group">
                                         <label for="property-age">Property Age</label>
-                                        <select id="property-age" onchange="updatePropertyAgeOptions()">
+                                        <select id="property-age" >
                                             <option value="property-age1">Under Construction</option>
                                             <option value="property-age2">Less than a Year</option>
                                             <option value="property-age3">1 to 3 years</option>
@@ -718,21 +719,21 @@
                                             <!-- Other options... -->
                                         </select>
                                     </div>
-                                    <div class="property-form-group" id="property-age-options" style="display: none;">
-                                        <label for="property-age-details">Possession By</label>
-                                        <select id="property-age-details">
+                                    <div class="property-form-group" id="property-age-options" >
+                                        <label for="property-Possession">Possession By</label>
+                                        <select id="property-Possession">
                                             <!-- Options will be added dynamically based on the selection -->
-                                            <option value="property-age-details1">Expected by</option>
-                                            <option value="property-age-details2">Within 3 Months</option>
-                                            <option value="property-age-details3">Within 6 Months</option>
-                                            <option value="property-age-details4">By 2024</option>
-                                            <option value="property-age-details5">By 2025</option>
-                                            <option value="property-age-details6">By 2026</option>
-                                            <option value="property-age-details7">By 2027</option>
-                                            <option value="property-age-details8">By 2028</option>
-                                            <option value="property-age-details9">By 2029</option>
-                                            <option value="property-age-details10">By 2030</option>
-                                            <option value="property-age-details11">By 2031</option>
+                                            <option value="property-Possession1">Expected by</option>
+                                            <option value="property-Possession2">Within 3 Months</option>
+                                            <option value="property-Possession3">Within 6 Months</option>
+                                            <option value="property-Possession4">By 2024</option>
+                                            <option value="property-Possession5">By 2025</option>
+                                            <option value="property-Possession6">By 2026</option>
+                                            <option value="property-Possession7">By 2027</option>
+                                            <option value="property-Possession8">By 2028</option>
+                                            <option value="property-Possession9">By 2029</option>
+                                            <option value="property-Possession10">By 2030</option>
+                                            <option value="property-Possession11">By 2031</option>
 
                                         </select>
                                     </div>
@@ -752,9 +753,9 @@
                                         <input type="text" id="tower" style="padding-right: 4rem;"> </input>
                                     </div>
 
-                                    <div class="property-form-group">
+                                    <div class="property-form-group d-flex">
                                         <label for="property-Possession">Unit No (Keep it private)</label>
-                                        <input type="checkbox" id="keep-private-checkbox">
+                                        <input type="checkbox" id="keep-private-checkbox" style="margin-left:3%;  margin-top:2%;">
                                     </div>
 
                                     <div class="property-form-group">
@@ -766,11 +767,13 @@
                                         <label for="property-floor">Floor Type</label>
                                         <select id="property-floor">
                                             <option value="floor-type1">Marble </option>
-                                            <option value="floor-type2">Concrete</option>
-                                            <option value="floor-type3">Cemented</option>
-                                            <option value="floor-type4">Carpeted</option>
-                                            <option value="floor-type5">Wooden</option>
-                                            <option value="floor-type6">Others</option>
+                                            <option value="floor-type2">Tile</option>
+                                            <option value="floor-type3">Concrete</option>
+                                            <option value="floor-type4">Cemented</option>
+                                            <option value="floor-type5">Carpeted</option>
+                                            <option value="floor-type6">Wooden</option>
+                                            <option value="floor-type7">Mosaic</option>
+                                            <option value="floor-type8">Others</option>
                                         </select>
                                     </div>
 
@@ -780,6 +783,63 @@
                                             <option value="floor-type1">Modular </option>
                                             <option value="floor-type2">Covered Shelves</option>
                                             <option value="floor-type3">Open Shelves</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="property-form-group">
+                                        <label for="property-Furnishing">Furnishing</label>
+                                        <select id="property-Furnishing">
+                                            <option value="floor-Furnishing1">Fully furnished</option>
+                                            <option value="floor-Furnishing2">Semi-furnished</option>
+                                            <option value="floor-Furnishing3">Unfurnished</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="property-form-group">
+                                        <label for="property-Furnished">Fully furnished</label>
+                                        <select id="property-Furnished">
+                                            <option value="floor-Furnished1">0 + Light</option>
+                                            <option value="floor-Furnished2">0+ Fans</option>
+                                            <option value="floor-Furnished3">0 + AC</option>
+                                            <option value="floor-Furnished4">0+ TV</option>
+                                            <option value="floor-Furnished5">0+ Beds</option>
+                                            <option value="floor-Furnished6">0 + Wardrobe</option>
+                                            <option value="floor-Furnished7">0 + Geyser</option>
+                                            <option value="floor-Furnished8">Sofa</option>
+                                            <option value="floor-Furnished9">Washing Machine</option>
+                                            <option value="floor-Furnished10">Stove</option>
+                                            <option value="floor-Furnished11">Fridge</option>
+                                            <option value="floor-Furnished12">Water Purifier</option>
+                                            <option value="floor-Furnished13">Microwave</option>
+                                            <option value="floor-Furnished14">Modular Kitchen</option>
+                                            <option value="floor-Furnished15">Chimney</option>
+                                            <option value="floor-Furnished16">Curtains</option>
+                                            <option value="floor-Furnished17">Dinning Table</option>
+                                            <option value="floor-Furnished18">Exhaust Fan</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="property-form-group">
+                                        <label for="property-semiFurnished">Semi furnished</label>
+                                        <select id="property-semiFurnished">
+                                            <option value="floor-semiFurnished1">0 + Light</option>
+                                            <option value="floor-semiFurnished2">0+ Fans</option>
+                                            <option value="floor-semiFurnished3">0 + AC</option>
+                                            <option value="floor-semiFurnished4">0+ TV</option>
+                                            <option value="floor-semiFurnished5">0+ Beds</option>
+                                            <option value="floor-semiFurnished6">0 + Wardrobe</option>
+                                            <option value="floor-semiFurnished7">0 + Geyser</option>
+                                            <option value="floor-semiFurnished8">Sofa</option>
+                                            <option value="floor-semiFurnished9">Washing Machine</option>
+                                            <option value="floor-semiFurnished10">Stove</option>
+                                            <option value="floor-semiFurnished11">Fridge</option>
+                                            <option value="floor-semiFurnished12">Water Purifier</option>
+                                            <option value="floor-semiFurnished13">Microwave</option>
+                                            <option value="floor-semiFurnished14">Modular Kitchen</option>
+                                            <option value="floor-semiFurnished15">Chimney</option>
+                                            <option value="floor-semiFurnished16">Curtains</option>
+                                            <option value="floor-semiFurnished17">Dinning Table</option>
+                                            <option value="floor-semiFurnished18">Exhaust Fan</option>
                                         </select>
                                     </div>
 
@@ -953,7 +1013,7 @@
                 </div>
                 <!-- Amenities section detils end -->
                 <!-- pricing section detils starts -->
-                <div class="col-lg-8 col-md-6 col-12 properyInputInfo d-none" id="pricingDetails"
+                <div class="col-lg-8 col-md-6 col-12  d-none" id="pricingDetails"
                     style="background-color: #fff; column-gap: 15px; padding: 3%;">
                     <h1 class="text-center" style="color: #007bff;">Pricing Details</h1>
                     <form class=" mt-3 " id="plot-land-3" style="display:none;">
@@ -1052,7 +1112,12 @@
                                 </div>
 
                                 <div class="property-form-group ">
-                                    <label for="property-option">Expected rental(per month)</label>
+                                    <label for="property-option">Maintenance included Maintenance extra</label>
+                                    <input type="text" id="Maintenanceamount" placeholder="price"> </input>
+                                </div>
+
+                                <div class="property-form-group ">
+                                    <label for="property-option">Maintenance amount(per month)</label>
                                     <input type="text" id="rentalamount" placeholder="price"> </input>
                                 </div>
 
@@ -1128,8 +1193,6 @@
 
                 </div>
 
-
-
                 <!-- Gallery section detils end -->
 
                 <!-- brouchure section detils starts -->
@@ -1153,7 +1216,7 @@
                 </div>
                 <!-- brouchure section detils end -->
                 <!-- Developer/Builder information section detils starts -->
-                <div class="col-lg-8 col-md-6 col-12 properyInputInfo d-none" id="informationDetails"
+                <div class="col-lg-8 col-md-6 col-12  d-none" id="informationDetails"
                     style="background-color: #fff; column-gap: 15px; padding: 3%;">
                     <h1 class="text-center" style="color: #007bff;">Developer/Builder Information</h1>
                     <form class=" mt-3 ">
@@ -1237,144 +1300,123 @@
 
                 <!-- rental section detils end -->
                 <!-- owner section detils starts -->
-                <div class="col-lg-8 col-md-6 col-12 properyInputInfo d-none" id="ownerDetails"
-                    style="background-color: #fff; column-gap: 15px; padding: 3%;">
-                    <h1 class="text-center" style="color: #007bff;">Owner Details</h1>
+                <div class="col-lg-8 col-md-6 col-12 properyInputInfo d-none" id="ownerDetails">
+    <h1 class="text-center text-primary">Owner Details</h1>
+    <!-- Single set of switches -->
+    <label class ="text-center" style="font-size:18px;">You are posting as:</label>
+    <div class="owner-tabbox mt-3">
+        <button class="tablink" onclick="openPage('OwnerForm', this)" id="defaultOpen">Owner</button>
+        <button class="tablink" onclick="openPage('PropertyManagerForm', this)">Property Manager</button>
+        <button class="tablink" onclick="openPage('AgentForm', this)">Agent</button>
+    </div>
 
-                    <!-- Single set of switches -->
-                    <div class="owner-tabbox mt-5">
-                        <div class="tab owner-tab1 active-owner-tab">Owner</div>
-                        <div class="tab owner-tab2">Property Manager</div>
-                        <div class="tab owner-tab3">Agent</div>
-                    </div>
-
-                    <!-- Form for Owner -->
-                    <div class="owner-form owner-form1">
-                        <form class="d-flex mt-3">
-                            <div class="left-option">
-                                <div class="property-form-group">
-                                    <label for="">Owner Name</label>
-                                    <input type="text" placeholder="e.g.">
-                                </div>
-                                <div class="property-form-group">
-                                    <label for="">Owner Mobile Number</label>
-                                    <input type="tel" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-                                </div>
-                                <div class="property-form-group">
-                                    <label for="">Owner Aadhar Number</label>
-                                    <input type="text" placeholder="1234-4567-7890">
-                                </div>
-                            </div>
-                            <div class="right-option mx-2">
-                                <div class="property-form-group">
-                                    <label for="">Property paper</label>
-                                    <form action="/action_page.php" class="">
-                                        <input type="file" id="myFile" name="filename">
-                                    </form>
-                                </div>
-                                <div class="property-form-group">
-                                    <label for="">Electricity bill</label>
-                                    <form action="/action_page.php" class="">
-                                        <input type="file" id="myFile" name="filename">
-                                    </form>
-                                </div>
-                                <div class="property-form-group">
-                                    <label for="">Upload registry</label>
-                                    <form action="/action_page.php" class="">
-                                        <input type="file" id="myFile" name="filename">
-                                    </form>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                    <!-- Form for Property Manager -->
-                    <div class="owner-form owner-form2" style="display: none;">
-                        <form class="d-flex mt-3">
-                            <div class="left-option">
-                                <div class="property-form-group">
-                                    <label for="">Property Manager Name</label>
-                                    <input type="text" placeholder="e.g.">
-                                </div>
-                                <div class="property-form-group">
-                                    <label for="">Property Manager Mobile Number</label>
-                                    <input type="tel" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-                                </div>
-                                <div class="property-form-group">
-                                    <label for="">Property Manager Aadhar Number</label>
-                                    <input type="text" placeholder="1234-4567-7890">
-                                </div>
-                            </div>
-                            <div class="right-option mx-2">
-                                <div class="property-form-group">
-                                    <label for="">Property paper</label>
-                                    <form action="/action_page.php" class="">
-                                        <input type="file" id="myFile" name="filename">
-                                    </form>
-                                </div>
-                                <div class="property-form-group">
-                                    <label for="">Electricity bill</label>
-                                    <form action="/action_page.php" class="">
-                                        <input type="file" id="myFile" name="filename">
-                                    </form>
-                                </div>
-                                <div class="property-form-group">
-                                    <label for="">Upload registry</label>
-                                    <form action="/action_page.php" class="">
-                                        <input type="file" id="myFile" name="filename">
-                                    </form>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                    <!-- Form for Agent -->
-                    <div class="owner-form owner-form3" style="display: none;">
-                        <form class="d-flex mt-3">
-                            <div class="left-option">
-                                <div class="property-form-group">
-                                    <label for="">Agent Name</label>
-                                    <input type="text" placeholder="e.g.">
-                                </div>
-                                <div class="property-form-group">
-                                    <label for="">Agent Mobile Number</label>
-                                    <input type="tel" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-                                </div>
-                                <div class="property-form-group">
-                                    <label for="">Agent Aadhar Number</label>
-                                    <input type="text" placeholder="1234-4567-7890">
-                                </div>
-                            </div>
-                            <div class="right-option mx-2">
-                                <div class="property-form-group">
-                                    <label for="">Property paper</label>
-                                    <form action="/action_page.php" class="">
-                                        <input type="file" id="myFile" name="filename">
-                                    </form>
-                                </div>
-                                <div class="property-form-group">
-                                    <label for="">Electricity bill</label>
-                                    <form action="/action_page.php" class="">
-                                        <input type="file" id="myFile" name="filename">
-                                    </form>
-                                </div>
-                                <div class="property-form-group">
-                                    <label for="">Upload registry</label>
-                                    <form action="/action_page.php" class="">
-                                        <input type="file" id="myFile" name="filename">
-                                    </form>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="button-container">
-                        <button class="btn btn-primary previous-btn">Previous</button>
-                        <button class="btn btn-primary next-btn">Next & Continue</button>
-                    </div>
+    <!-- Form for Owner -->
+    <div id="OwnerForm" class="tabcontent">
+        <form class="d-flex mt-3">
+            <div class="left-option">
+                <div class="property-form-group">
+                    <label>Owner Name</label>
+                    <input type="text" placeholder="e.g.">
                 </div>
+                <div class="property-form-group">
+                    <label>Owner Mobile Number</label>
+                    <input type="tel" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </div>
+                <div class="property-form-group">
+                    <label>Owner Aadhar Number</label>
+                    <input type="text" placeholder="1234-4567-7890">
+                </div>
+            </div>
+            <div class="right-option mx-2">
+                <div class="property-form-group">
+                    <label>Property paper</label>
+                    <input type="file" id="myFile" name="filename">
+                </div>
+                <div class="property-form-group">
+                    <label>Electricity bill</label>
+                    <input type="file" id="myFile" name="filename">
+                </div>
+                <div class="property-form-group">
+                    <label>Upload registry</label>
+                    <input type="file" id="myFile" name="filename">
+                </div>
+            </div>
+        </form>
+    </div>
 
+    <!-- Form for Property Manager -->
+    <div id="PropertyManagerForm" class="tabcontent">
+        <form class="d-flex mt-3">
+            <div class="left-option">
+                <div class="property-form-group">
+                    <label>Owner Name</label>
+                    <input type="text" placeholder="e.g.">
+                </div>
+                <div class="property-form-group">
+                    <label>Owner Mobile Number</label>
+                    <input type="tel" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </div>
+                <div class="property-form-group">
+                    <label>Owner Aadhar Number</label>
+                    <input type="text" placeholder="1234-4567-7890">
+                </div>
+            </div>
+            <div class="right-option mx-2">
+                <div class="property-form-group">
+                    <label>Property paper</label>
+                    <input type="file" id="myFile" name="filename">
+                </div>
+                <div class="property-form-group">
+                    <label>Electricity bill</label>
+                    <input type="file" id="myFile" name="filename">
+                </div>
+                <div class="property-form-group">
+                    <label>Upload registry</label>
+                    <input type="file" id="myFile" name="filename">
+                </div>
+            </div>
+        </form>
+    </div>
 
+    <!-- Form for Agent -->
+    <div id="AgentForm" class="tabcontent">
+        <form class="d-flex mt-3">
+            <div class="left-option">
+                <div class="property-form-group">
+                    <label>Owner Name</label>
+                    <input type="text" placeholder="e.g.">
+                </div>
+                <div class="property-form-group">
+                    <label>Owner Mobile Number</label>
+                    <input type="tel" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </div>
+                <div class="property-form-group">
+                    <label>Owner Aadhar Number</label>
+                    <input type="text" placeholder="1234-4567-7890">
+                </div>
+            </div>
+            <div class="right-option mx-2">
+                <div class="property-form-group">
+                    <label>Property paper</label>
+                    <input type="file" id="myFile" name="filename">
+                </div>
+                <div class="property-form-group">
+                    <label>Electricity bill</label>
+                    <input type="file" id="myFile" name="filename">
+                </div>
+                <div class="property-form-group">
+                    <label>Upload registry</label>
+                    <input type="file" id="myFile" name="filename">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="button-container mt-4">
+        <button class="btn btn-primary previous-btn">Previous</button>
+        <button class="btn btn-primary next-btn">Next & Continue</button>
+    </div>
+</div>
 
                 <!-- owner section detils end -->
                 <!-- Schedule section detils starts -->
@@ -1407,6 +1449,28 @@
 
                                 </div>
                             </div>
+
+
+                            <div class="property-form-group">
+                            <label>who will show the property</label>
+                            <select class="property-person">
+                                        <option value="Need help">Need help</option>
+                                        <option value="I will show">I will show </option>
+                                        <option value="Neighbours">Neighbours </option>
+                                        <option value="Friends/Relatives">Friends/Relatives </option>
+                                        <option value="Security">Security </option>
+                                        <option value="Tenants">Tenants </option>
+                                    
+                                        <!-- Add more options as needed -->
+                                    </select>
+                            </div>
+                            <div class="mb-3">
+                                        <label for="secondary-no" class="form-label">Secondary Number : </label>
+                                        <input type="text" class="form-control" id="secondary-no"
+                                          style="border-radius:5px;"   required>
+                                    </div>
+
+
                         </div>
                         <div class="right-option  mx-2" style="margin-top: 10%;">
                             <div class="property-form-group">
@@ -1469,21 +1533,7 @@
         include './footer.php';?>
     <!-- main-footer end -->
     <!---------------------footer secton------------------------------------------------------------------------------------------------->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js"
-        integrity="sha512-C8qHv0HOaf4yoA7ISuuCTrsPX8qjolYTZyoFRKNA9dFKnxgzIHnYTOJhXQIt6zwpIFzCrRzUBuVgtC4e5K1nhA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-        defer></script>
-    <!-- <script src="js/script.js"></script> -->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/custom.js"></script>
+   
     <script>
         AOS.init();
     </script>
@@ -1501,8 +1551,6 @@
                 }
             });
         }
-
-
 
     </script>
     <script>
@@ -1613,9 +1661,21 @@
                 dropdown.innerHTML = `
             <option value="none">Select</option>
             <option value="cover">Set as Cover</option>
-            <option value="dummy1">Dummy Option 1</option>
-            <option value="dummy2">Dummy Option 2</option>
-            <option value="dummy3">Dummy Option 3</option>
+            <option value="dropdown1">Kitchen</option>
+            <option value="dropdown2">Bedroom</option>
+            <option value="dropdown3">Dining </option>
+            <option value="dropdown4">Drawing</option>
+            <option value="dropdown5">Hall</option>
+            <option value="dropdown6">Bathroom</option>
+            <option value="dropdown7">Entrance/Lobby</option>
+            <option value="dropdown8">Gallery</option>
+            <option value="dropdown9">Study</option>
+            <option value="dropdown10">Balcony</option>
+            <option value="dropdown11">Utility</option>
+            <option value="dropdown12">Outside</option>
+            <option value="dropdown13">Property layout</option>
+            <option value="dropdown14">Master plan</option>
+            <option value="dropdown15">Other</option>
         `;
                 dropdown.classList.add("dropdown-options");
                 dropdown.addEventListener('change', function () {
@@ -1676,9 +1736,23 @@
 
 
     </script>
-
+ <script src="assets/js/propertyregistration.js"></script>
     <script async defer src="assets/js/map.js"></script>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js"
+        integrity="sha512-C8qHv0HOaf4yoA7ISuuCTrsPX8qjolYTZyoFRKNA9dFKnxgzIHnYTOJhXQIt6zwpIFzCrRzUBuVgtC4e5K1nhA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+        defer></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>

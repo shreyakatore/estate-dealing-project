@@ -1369,44 +1369,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Function to toggle property types based on dropdown selection
-// Function to toggle property types based on dropdown selection
-function togglePropertyTypeDropdown() {
-	var propertyType = document.getElementById("flat-apartment").value;
-	if (propertyType === "flat_apartment") {
-		showElements(["flat-apartment-1", "flat-apartment-2", "flat-apartment-3", "flat-apartment-4"]);
-		hideElements(["plot-land-1", "plot-land-2", "plot-land-3", "plot-land-4"]);
-	} else if (propertyType === "plot_land") {
-		showElements(["plot-land-1", "plot-land-2", "plot-land-3" , "plot-land-4"]);
-		hideElements(["flat-apartment-1", "flat-apartment-2", "flat-apartment-3" , "flat-apartment-4"]);
-	} 
-}
-
-// Function to show elements
-function showElements(ids) {
-	ids.forEach(function(id) {
-		document.getElementById(id).style.display = "block";
-	});
-}
-
-// Function to hide elements
-function hideElements(ids) {
-	ids.forEach(function(id) {
-		document.getElementById(id).style.display = "none";
-	});
-}
-
-// Initial call to togglePropertyTypeDropdown to ensure correct initial state
-togglePropertyTypeDropdown();
-
 
 // Add event listener to property type dropdown
-document.getElementById("property-type").addEventListener("change", function() {
-togglePropertyTypeDropdown(); // Call togglePropertyTypeDropdown to handle property type visibility
-});
-
-// Initial call to togglePropertyTypeDropdown to ensure correct initial state
-togglePropertyTypeDropdown();
 
 document.addEventListener('DOMContentLoaded', function() {
     // Function to handle the save builder button click
@@ -1431,7 +1395,3 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('save-builder-btn').addEventListener('click', saveBuilder);
 });
 
-// //// owner details tabbox
-
-  ////// gallery details
-  

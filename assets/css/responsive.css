@@ -194,9 +194,19 @@
     visibility:hidden;
     opacity:0;
   }
+
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+  .properyInputInfo .d-flex {
+    flex-direction: column;
+  }
 
+  .properyInputInfo .left-option, .properyInputInfo .right-option {
+    min-width: 100%;
+  }
+}
 
 @media only screen and (max-width: 991px){
 
