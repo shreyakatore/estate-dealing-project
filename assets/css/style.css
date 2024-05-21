@@ -12294,22 +12294,26 @@ body *{
 
 /* CSS */
 /* image gallery details */
-.photo-container {
-  max-width: 800px; /* Adjusted max-width */
-  margin: 20px auto; /* Centered the container */
+/* Set display none for .video-container by default */
+
+/* Adjust photo-container and video-container styling */
+.photo-container, .video-container {
+  max-width: 600px; /* Adjusted max-width */
+  margin: 0 auto; /* Centered horizontally */
   padding: 20px;
-  border: 2px dashed #ccc; /* Changed border style to dashed */
+  border: 2px dashed #ccc;
   border-radius: 10px;
   text-align: center;
 }
-.photo-icon {
+
+.photo-icon, .video-icon {
   font-size: 50px;
+  margin-bottom: 10px;
 }
 
 .preview-media-wrapper {
   width: 160px;
-  height: 145px;
-  overflow: hidden;
+  height: 175px;
   display: inline-block;
   margin: 5px;
   position: relative;
@@ -12321,28 +12325,25 @@ body *{
 
 .preview-media {
   width: 100%;
-  height: 100px;
+  height: 110px;
   object-fit: cover;
 }
 
-.dropdown-options {
-  display: block;
+.cover-radio-wrapper {
   margin-top: 5px;
-  width: 100%;
+  text-align: left;
+}
+
+.cover-radio-wrapper input[type="radio"]{
+  margin-right: 10px;
+}
+
+.dropdown-options {
+  margin-top: 5px;
+  width: 136px; /* Adjust width as needed */
   box-sizing: border-box;
 }
-
-.delete-button {
-  background:  #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 2px 5px;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
-
+/* Adjust cover-badge styling */
 .cover-badge {
   position: absolute;
   top: 5px;
@@ -12353,6 +12354,20 @@ body *{
   font-size: 12px;
   border-radius: 3px;
 }
+
+/* Adjust delete button styling */
+.delete-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 2px 5px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1; /* Ensure delete button appears above other elements */
+}
+
 /* amenties tab */
 /* map locality details */
 
@@ -12604,6 +12619,29 @@ label {
 
 
 /**************tab property end********************* */
+.property-form-group-price input,
+.property-form-group-price select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.property-form-group-price-mentainance  .hidden {
+  display: none;
+}
+
+.property-form-group-price-mentainance input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 /* mayur added  */
 #map iframe{
   border-radius: 5px;
@@ -13208,4 +13246,14 @@ input[type="radio"]:checked + label + .content {
 
 .camera-icon i {
   font-size: 16px; /* Adjust icon size as needed */
+}
+
+.price-details .maintainace-checkbox input[type="checkbox"] {
+  height: -webkit-fill-available;
+  margin-top: 7%;
+
+}
+.price-details .maintainace-checkbox{
+  margin-top: 2%;
+  display: flex;
 }
