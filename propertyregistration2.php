@@ -449,13 +449,8 @@
 
                                             </select>
                                         </div>
-                                    </div>
-                                </div>
 
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="right-option  mx-2" style="margin-top: 10%;">
-                                        <!-- Other input fields... -->
-                                        <div class="property-form-group">
+                                           <div class="property-form-group">
                                             <label for="property-Possession">Transaction Type : </label>
                                             <label>Sale transaction type</label>
                                             <div class="d-flex" style="column-gap: 18px;">
@@ -468,6 +463,13 @@
                                             </div>
                                         </div>
 
+                                       
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="right-option  mx-2" style="margin-top: 10%;">
+                                        <!-- Other input fields... -->
                                         <div class="property-form-group">
                                             <label for="property-view">Which authority the property is approved
                                                 by?</label>
@@ -1278,11 +1280,7 @@
                                             <label for="facing-road">Width of facing road</label>
                                             <input type="text" id="facing-road" style="padding-right: 4rem;">
                                         </div>
-                                    </div>
-                                </div>
 
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="left-option" style="margin-top: 10%;">
                                         <div class="property-form-group">
                                             <label for="property-facing">Facing</label>
                                             <select id="property-facing">
@@ -1296,6 +1294,13 @@
                                                 <option value="property-facing8">South-West</option>
                                             </select>
                                         </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="left-option" style="margin-top: 10%;">
+                                       
 
                                         <div class="property-form-group possessiondiv">
                                             <label for="builder-property-PossessionStatus">Possession Status</label>
