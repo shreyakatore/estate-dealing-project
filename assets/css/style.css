@@ -2246,8 +2246,6 @@ div#mCSB_1_container{
   }
 }
 
-
-
 .commuteBtn.nearBy {
   white-space: nowrap;
   position: absolute;
@@ -2509,7 +2507,6 @@ div#mCSB_1_container{
 .bg-color-1{
   background-color: #e5f8ed;
 }
-
 
 /** feature-section **/
 
@@ -2846,7 +2843,6 @@ div#mCSB_1_container{
   position: relative;
   margin-top: 50px;
 }
-
 
 /** video-section **/
 
@@ -3396,7 +3392,6 @@ div#mCSB_1_container{
   color: rgba(255,255,255,0.6);
 }
 
-
 /** place-section **/
 
 .place-section{
@@ -3473,7 +3468,6 @@ div#mCSB_1_container{
   font-size: 14px;
   color: #93959e;
 }
-
 
 /** team-section **/
 
@@ -3660,7 +3654,6 @@ div#mCSB_1_container{
 .bg-color-2{
   background-color: #1b1d21;
 }
-
 
 /** cta-section **/
 
@@ -8683,7 +8676,6 @@ div#mCSB_1_container{
   background-color: #17c7d2;
 }
 
-
 /** faq-page-section **/
 
 .faq-page-section{
@@ -9140,7 +9132,6 @@ div#mCSB_1_container{
   transform: translate(-50%,-50%) scale(1,1);
 }
 
-
 .gallery-style-two{
   position: relative;
 }
@@ -9176,16 +9167,12 @@ div#mCSB_1_container{
   margin-top: 40px;
 }
 
-
-
 /*** 
-
 ====================================================================
                         MyProfile-Page
 ====================================================================
 
 ***/
-
 
 .myprofile-section{
   position: relative;
@@ -9442,7 +9429,6 @@ div#mCSB_1_container{
   overflow: hidden;
 }
 
-
 .ragister-section{
   position: relative;
 }
@@ -9490,10 +9476,6 @@ div#mCSB_1_container{
   font-size: 15px;
 }
 
-.ragister-section .inner-box .othre-text p a{
-
-}
-
 .ragister-section .inner-box .othre-text p a:hover{
   text-decoration: underline;
 }
@@ -9532,7 +9514,6 @@ div#mCSB_1_container{
   color: #ffffff;
 }
 
-
 /** error-section **/
 
 .error-section{
@@ -9567,7 +9548,6 @@ div#mCSB_1_container{
   margin-bottom: 60px;
 }
 
-
 /** contact-info-section **/
 
 .contact-info-section{
@@ -9599,10 +9579,6 @@ div#mCSB_1_container{
   z-index: 1;
 }
 
-.info-block:nth-child(2) .info-block-one .inner-box .icon-box{
-
-}
-
 .info-block:last-child .info-block-one .inner-box .icon-box{
   color: #f94c4c;
 }
@@ -9628,10 +9604,6 @@ div#mCSB_1_container{
   opacity: 0.05;
 }
 
-.info-block:nth-child(2) .info-block-one .inner-box .icon-box:before{
-
-}
-
 .info-block:last-child .info-block-one .inner-box .icon-box:before{
   background-color: #f94c4c;
 }
@@ -9654,10 +9626,6 @@ div#mCSB_1_container{
   color: #a0a1a8;
 }
 
-.info-block-one .inner-box p a:hover{
-
-}
-
 .contact-section .google-map-area{
   position: relative;
   background-color: #ffffff;
@@ -9670,8 +9638,6 @@ div#mCSB_1_container{
   width: 100%;
   height: 540px;
 }
-
-
 
 /*** 
 
@@ -9695,7 +9661,6 @@ div#mCSB_1_container{
   border: 1px solid #e5e7ec;
   border-radius: 10px;
 }
-
 
 /*** 
 
@@ -9782,10 +9747,6 @@ div#mCSB_1_container{
   transition: all 500ms ease;
 }
 
-.blog-sidebar .sidebar-widget .search-inner .form-group input:focus{
-
-}
-
 .blog-sidebar .social-widget .social-links li{
   position: relative;
   display: inline-block;
@@ -9860,10 +9821,6 @@ div#mCSB_1_container{
   float: right;
 }
 
-.blog-sidebar .category-widget .category-list li a:hover{
-
-}
-
 .blog-sidebar .category-widget{
   padding-bottom: 15px;
 }
@@ -9912,10 +9869,6 @@ div#mCSB_1_container{
 .blog-sidebar .post-widget .post h5 a{
   display: inline-block;
   color: #2d2929;
-}
-
-.blog-sidebar .post-widget .post h5 a:hover{
-
 }
 
 .blog-sidebar .post-widget .post .post-date{
@@ -9985,10 +9938,6 @@ div#mCSB_1_container{
 .news-block-one .inner-box .lower-content h3 a{
   display: inline-block;
   color: #2d2929;
-}
-
-.news-block-one .inner-box .lower-content h3 a:hover{
-
 }
 
 .blog-details-content .news-block-one .inner-box .image-box .image img{
@@ -10156,10 +10105,6 @@ div#mCSB_1_container{
   margin-right: 10px;
 }
 
-.blog-details-content .comments-area .comment .text a:hover{
-
-}
-
 .blog-details-content .comments-area .comment.replay-comment{
   margin-left: 70px;
 }
@@ -10194,7 +10139,6 @@ div#mCSB_1_container{
 .main-header.dark-header .menu-area .mobile-nav-toggler .icon-bar{
   background-color: #ffffff;
 }
-
 
 /** modify-css **/
 
@@ -10318,7 +10262,8 @@ div#mCSB_1_container{
 .search-field .top-search .search-btn button i{
   margin-right: 8px;
 }
-.pay{    text-align: left;
+.pay{   
+   text-align: left;
   font-size: 14px;
   line-height: 18px;
   padding-right: 6px;
@@ -10327,18 +10272,22 @@ div#mCSB_1_container{
   padding-bottom: 15px;
 
 }
-.pay1{text-align: left;
+.pay1{
+  text-align: left;
   font-size: 13px !important;
   line-height: 18px;
   padding-right: 6px;
   padding-left: 19px;
   margin-top: -24px;
-  padding-bottom:0px;}
+  padding-bottom:0px;
+}
 
-.main-t{padding-top: 50px !important;
+.main-t{
+  padding-top: 50px !important;
       padding-bottom: 0px !important;
     }  
-    .free{    color: #000;
+    .free{    
+      color: #000;
       background: #f2b241;
       font-size: 12px;
       padding-top: 2px;
@@ -10347,7 +10296,9 @@ div#mCSB_1_container{
       padding-left: 5px;
       padding-right: 5px;
   }
-  .post1{color: #fff;}
+  .post1{
+    color: #fff;
+  }
   .bp10 {
     padding-bottom: 45px !important;
     padding-top: 48px !important;
@@ -10359,12 +10310,16 @@ div#mCSB_1_container{
   padding-top: 40px;
   padding-bottom: 40px;
 }
-#yp1{    padding-top: 40px;
-  padding-bottom: 40px;}
-  .cr1{    position: relative;
+#yp1{ 
+     padding-top: 40px;
+  padding-bottom: 40px;
+}
+  .cr1{   
+     position: relative;
     top: -11px;
     left: 11px;
-    font-size: 20px;}
+    font-size: 20px;
+  }
     #toll{font-size: 12px;}   
     #toll1{font-size: 12px; font-weight: 700;} 
 
@@ -12293,6 +12248,541 @@ body *{
 }
 
 /* CSS */
+
+/* property detail room chips */
+.flat-apartment .property-form-group {
+  margin: 20px 0;
+}
+
+.flat-apartment .property-form-group label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+ .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+ .chip {
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.3s;
+  border: 1px solid transparent;
+}
+
+ .chip:hover {
+  background-color: #ddd;
+}
+
+.rooms-chips{
+  display: ruby-text;
+}
+#rooms-chips-container-2 {
+  display: flex; /* Ensure this is not set to none */
+}
+
+.rooms-chips .chip.selected {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}
+
+ .chip::before {
+  content: '+ ';
+  color: inherit;
+}
+/* residential villa house */
+/* Container for chips */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+/* authority chips */
+.authority-chips label { 
+  margin-bottom: 10px;
+  display: block;
+}
+
+.authority-chips .chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin: 4px;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.authority-chips .chip:hover {
+  background-color: #e0e0e0;
+}
+
+.authority-chips input[type="radio"] {
+  display: none;
+}
+
+.authority-chips input[type="radio"]:checked + label.chip {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+/* Individual chip style */
+.residential-villa .chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin: 4px;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.residential-villa .chip:hover {
+  background-color: #e0e0e0;
+}
+
+.residential-villa .chip:active {
+  background-color: #ccc;
+}
+
+/* Chip close button style */
+.residential-villa .chip .close-btn {
+  margin-left: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #777;
+}
+
+.residential-villa .chip .close-btn:hover {
+  color: #555;
+}
+
+/* Example container for different chip groups */
+.residential-villa .rooms-chips {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Additional styling to ensure proper display on various devices */
+@media (max-width: 768px) {
+  .residential-villa .chip {
+      padding: 6px 10px;
+      font-size: 12px;
+  }
+}
+
+/* Container for chips */
+/* General form styling */
+#builder-1 {
+    display: none;
+}
+
+.builder .residential_builder {
+    padding: 20px;
+}
+
+
+/* Labels and inputs styling */
+.builder  .property-form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.builder  .property-form-group select,
+.builder  .property-form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Furnishing chip switcher */
+.builder  .chip-switcher {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 15px;
+}
+
+.builder  .chip {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.builder .chip:hover {
+    background-color: #f0f0f0;
+}
+
+.chip.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* Quantity container */
+.builder .quantity-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.builder  .quantity-container label {
+    flex: 1;
+}
+
+.builder  .quantity-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.builder  .quantity-container input[type="number"] {
+    width: 50px;
+    text-align: center;
+    margin: 0 5px;
+    padding: 5px;
+}
+/* vila container */
+.furnishing-content .property-form-group {
+  margin-bottom: 20px;
+}
+
+.furnishing-content .chip-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.furnishing-content .chip {
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.furnishing-content .chip.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.furnishing-content .checkbox-container,
+.furnishing-content .quantity-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.furnishing-content .quantity-container button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.furnishing-content .quantity-container input {
+  width: 50px;
+  text-align: center;
+}
+
+.furnishing-content .villa-furnishing {
+  display: none;
+}
+
+.builder  .checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.builder .checkbox-container label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.builder  .checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.builder-possession-chips{
+  display: inline-flex;
+  column-gap: 8px;
+}
+
+/* Buttons */
+.builder  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.builder .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.builder  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.builder .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+/* chips possession */
+/* Styling for possession container */
+.possessiondiv .possession-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Styling for possession chips */
+.possessiondiv .possession-chips {
+  display: flex;
+  gap: 10px;
+ /* Ensure chips wrap on smaller screens */
+}
+
+/* Styling for individual chip */
+.possessiondiv .chip {
+  padding: 10px; /* Adjust padding for better appearance */
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Hover state for chip */
+.possessiondiv .chip:hover {
+  background-color: #e0e0e0;
+  border-color: #b0b0b0; /* Slightly darker border on hover */
+}
+
+/* Selected state for chip */
+.possessiondiv .chip.selected {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Stronger shadow for selected chip */
+}
+
+.possessiondiv .chip::before {
+  content: ' ';
+  color: inherit;
+}
+/* Active state for chip */
+.possessiondiv .chip:active {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  transform: translateY(2px); /* Simulate button press effect */
+}
+
+/* Focus state for chip for accessibility */
+.possessiondiv .chip:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Outline on focus for accessibility */
+}
+
+.hidden {
+  display: none;
+}
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .possessiondiv .chip {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+/* Input Fields */
+.property-form-group {
+    margin-bottom: 15px;
+}
+
+.property-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: grey;
+}
+
+.property-form-group input[type="text"],
+.property-form-group select,
+.property-form-group textarea,
+.property-form-group input[type="date"]
+ {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.property-form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Checkbox and Radio Button Styles */
+
+.checkbox-container label,
+.d-flex label {
+    margin-left: 5px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .property-form-group input[type="text"],
+    .property-form-group select,
+    .property-form-group textarea,
+    .property-form-group input[type="date"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* furnshing property details */
+.furnishing  .chip-switcher {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.furnishing .chip {
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+.furnishing .chip:hover {
+  background-color: #ddd;
+}
+
+.furnishing .chip.selected {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}
+.flat-apartment 
+.furnishing  .chip::before {
+  content: '';
+  color: inherit;
+}
+
+.propertydiv .furnishing .chip-switcher,
+.propertydiv .furnishing-1 .chip-container,
+.propertydiv .furnishing-1 .checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.propertydiv .furnishing .chip,
+.propertydiv .furnishing-1 .chip {
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+.propertydiv .furnishing .chip:hover,
+.propertydiv .furnishing-1 .chip:hover {
+  background-color: #ddd;
+}
+
+.propertydiv .furnishing .chip.selected,
+.propertydiv .furnishing-1 .chip.selected {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}
+
+.propertydiv .furnishing-1 .checkbox-container div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.propertydiv .furnishing-1 .checkbox-container label {
+  cursor: pointer;
+}
+
 /* image gallery details */
 /* Set display none for .video-container by default */
 
@@ -12634,13 +13124,52 @@ label {
 }
 
 .property-form-group-price-mentainance input {
-  width: 100%;
+ 
   padding: 8px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
+#maintenance-cost {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#maintenance-cost:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#maintenance-cost::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.property-form-group-price-maintenance input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input field focus styling */
+.property-form-group-price-maintenance input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Optional additional styling for better UX */
+
 
 /* mayur added  */
 #map iframe{
@@ -13250,10 +13779,14 @@ input[type="radio"]:checked + label + .content {
 
 .price-details .maintainace-checkbox input[type="checkbox"] {
   height: -webkit-fill-available;
-  margin-top: 7%;
+  margin-top: 5%;
+  margin-left: 1%;
 
 }
 .price-details .maintainace-checkbox{
   margin-top: 2%;
-  display: flex;
+}
+.property-form-group-price-mentainance input[type="text"] {
+width: 100%;
+
 }

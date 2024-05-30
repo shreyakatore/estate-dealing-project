@@ -1394,4 +1394,34 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add event listener to the save builder button
     document.getElementById('save-builder-btn').addEventListener('click', saveBuilder);
 });
+/// property details chips
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to add a chip
+    function addChip(value, text) {
+        var chipsContainer = document.getElementById('rooms-chips');
+        var chip = document.createElement('div');
+        chip.classList.add('chip');
+        chip.setAttribute('data-value', value);
+        chip.textContent = text;
+        chipsContainer.appendChild(chip);
+    }
+
+    // Function to remove a chip
+    function removeChip(chip) {
+        chip.parentNode.removeChild(chip);
+    }
+
+    // Event listener for chip addition and removal
+    document.getElementById('rooms-chips').addEventListener('click', function(event) {
+        var selectedOption = event.target.textContent.trim();
+        var selectedValue = event.target.getAttribute('data-value');
+        if (event.target.classList.contains('chip')) {
+            removeChip(event.target);
+            // Optionally you can perform further actions here with the removed chip data
+        } else {
+            addChip(selectedValue, selectedOption);
+            // Optionally you can perform further actions here with the added chip data
+        }
+    });
+});

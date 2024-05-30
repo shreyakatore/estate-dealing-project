@@ -86,6 +86,26 @@ function openPage(pageName, elmnt, color) {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var checkboxPlot = document.getElementById('maintenance-included-plot');
+    var maintenanceAmountGroupPlot = document.getElementById('maintenance-amount-group-plot');
+
+    checkboxPlot.addEventListener('change', function () {
+        if (checkboxPlot.checked) {
+            maintenanceAmountGroupPlot.classList.add('hidden');
+        } else {
+            maintenanceAmountGroupPlot.classList.remove('hidden');
+        }
+    });
+
+    // Initialize visibility based on the checkbox state for the plot form
+    if (checkboxPlot.checked) {
+        maintenanceAmountGroupPlot.classList.add('hidden');
+    } else {
+        maintenanceAmountGroupPlot.classList.remove('hidden');
+    }
+});
+
   ////////// property detail updated
 
 /////
@@ -257,3 +277,152 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('photoInput').addEventListener('change', (event) => previewFiles(event, 'photo'));
     document.getElementById('videoInput').addEventListener('change', (event) => previewFiles(event, 'video'));
 });
+
+/////// possession chips
+function toggleFields(formType) {
+    const propertyAgeGroup = document.getElementById(`${formType}-property-age-group`);
+    const possessionByGroup = document.getElementById(`${formType}-possession-by-group`);
+    const selectedChip = document.querySelector(`.${formType}-possession-chips .chip.selected`);
+
+    if (selectedChip && selectedChip.dataset.value === 'ready-to-move') {
+        propertyAgeGroup.style.display = 'block';
+        possessionByGroup.style.display = 'none';
+    } else if (selectedChip && selectedChip.dataset.value === 'under-construction') {
+        propertyAgeGroup.style.display = 'none';
+        possessionByGroup.style.display = 'block';
+    }
+}
+
+function selectChip(event) {
+    const formType = event.target.closest('form').id.split('-')[0]; // Extract form type (e.g., flat, villa, builder)
+    document.querySelectorAll(`.${formType}-possession-chips .chip`).forEach(chip => chip.classList.remove('selected'));
+    event.target.classList.add('selected');
+    toggleFields(formType);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const formTypes = ['flat', 'villa', 'builder']; // Add more form types as needed
+    formTypes.forEach(formType => {
+        document.querySelectorAll(`.${formType}-possession-chips .chip`).forEach(chip => {
+            chip.addEventListener('click', selectChip);
+        });
+        toggleFields(formType); // Initial call to set the correct fields based on the default selection
+    });
+});
+
+//////////// furnturing chips
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const furnishingChips = document.querySelectorAll('.furnishing-chip');
+//     const fullyFurnishedItems = document.getElementById('fully-furnished-items');
+//     const semiFurnishedItems = document.getElementById('semi-furnished-items');
+//     const unfurnishedItems = document.getElementById('unfurnished-items');
+
+//     furnishingChips.forEach(chip => {
+//         chip.addEventListener('click', () => {
+//             furnishingChips.forEach(chip => chip.classList.remove('active'));
+//             chip.classList.add('active');
+
+//             fullyFurnishedItems.style.display = 'none';
+//             semiFurnishedItems.style.display = 'none';
+//             unfurnishedItems.style.display = 'none';
+
+//             if (chip.dataset.value === 'fully-furnished') {
+//                 fullyFurnishedItems.style.display = 'block';
+//             } else if (chip.dataset.value === 'semi-furnished') {
+//                 semiFurnishedItems.style.display = 'block';
+//             } else if (chip.dataset.value === 'unfurnished') {
+//                 unfurnishedItems.style.display = 'block';
+//             }
+//         });
+//     });
+// });
+
+// function increaseQuantity(event, id) {
+//     event.stopPropagation();
+//     console.log(input.value);
+//     const input = document.getElementById(id);
+//     let inputvalue =  parseInt(input.value);
+//     inputvalue = inputvalue + 1 ;
+//     console.log(inputvalue);
+// }
+
+// function decreaseQuantity(event, id) {
+//     event.stopPropagation();
+//     const input = document.getElementById(id);
+//     if (parseInt(input.value) > 0) {
+//         input.value = parseInt(input.value) - 1;
+//     }
+// }
+///////  possession chipset
+
+document.addEventListener('DOMContentLoaded', function () {
+    const furnishingChips = document.querySelectorAll('.furnishing-chip');
+    const fullyFurnishedItems = document.getElementById('fully-furnished-items');
+    const semiFurnishedItems = document.getElementById('semi-furnished-items');
+    const unfurnishedItems = document.getElementById('unfurnished-items');
+    const furnishingPopup = document.getElementById('furnishingPopup');
+    const closeButton = document.querySelector('.close');
+
+    furnishingChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+            furnishingChips.forEach(chip => chip.classList.remove('active'));
+            chip.classList.add('active');
+
+            fullyFurnishedItems.style.display = 'none';
+            semiFurnishedItems.style.display = 'none';
+            unfurnishedItems.style.display = 'none';
+
+            if (chip.dataset.value === 'fully-furnished') {
+                fullyFurnishedItems.style.display = 'block';
+                furnishingPopup.style.display = 'block';
+            } else if (chip.dataset.value === 'semi-furnished') {
+                semiFurnishedItems.style.display = 'block';
+                furnishingPopup.style.display = 'block';
+            } else if (chip.dataset.value === 'unfurnished') {
+                furnishingPopup.style.display = 'none';
+            }
+        });
+    });
+
+    closeButton.addEventListener('click', () => {
+        furnishingPopup.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target == furnishingPopup) {
+            furnishingPopup.style.display = 'none';
+        }
+    });
+});
+
+function increaseQuantity(event, id) {
+    event.stopPropagation();
+    const input = document.getElementById(id);
+    let inputValue = parseInt(input.value);
+    input.value = inputValue + 1;
+}
+
+function decreaseQuantity(event, id) {
+    event.stopPropagation();
+    const input = document.getElementById(id);
+    if (parseInt(input.value) > 0) {
+        input.value = parseInt(input.value) - 1;
+    }
+}
+
+
+function increaseQuantity(event, id) {
+    event.stopPropagation();
+    const input = document.getElementById(id);
+    let inputValue = parseInt(input.value);
+    input.value = inputValue + 1;
+}
+
+function decreaseQuantity(event, id) {
+    event.stopPropagation();
+    const input = document.getElementById(id);
+    if (parseInt(input.value) > 0) {
+        input.value = parseInt(input.value) - 1;
+    }
+}

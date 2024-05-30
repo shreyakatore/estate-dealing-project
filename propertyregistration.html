@@ -741,193 +741,250 @@
                                         </div>
 
                                         <!-- proper  -->
-                                        <div class="property-form-group furnishing">
-                                            <label for="property-Furnishing">Furnishing</label>
-                                            <div class="chip-switcher" id="property-Furnishing">
-                                                <div class="chip furnishing-chip" data-value="fully-furnished">Fully
-                                                    furnished</div>
-                                                <div class="chip furnishing-chip" data-value="semi-furnished">
-                                                    Semi-furnished
-                                                </div>
-                                                <div class="chip furnishing-chip" data-value="unfurnished">Unfurnished
-                                                </div>
+                                        <label for="property-Furnishing">Furnishing</label>
+                                        <div class="chip-switcher" id="property-Furnishing">
+                                            <div class="chip furnishing-chip" data-value="fully-furnished">Fully
+                                                furnished</div>
+                                            <div class="chip furnishing-chip" data-value="semi-furnished">
+                                                Semi-furnished
+                                            </div>
+                                            <div class="chip furnishing-chip" data-value="unfurnished">Unfurnished
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div class="property-form-group furnishing-1" id="fully-furnished-items"
-                                            style="display: none;">
-                                            <label for="property-FullyFurnished">Fully furnished</label>
-                                            <div class="checkbox-container">
-                                                <label><input type="checkbox" name="fullyFurnished" value="sofa">
-                                                    sofa</label>
-                                                <label><input type="checkbox" name="fullyFurnished"
-                                                        value="Washing Machine">
-                                                    Washing Machine</label>
-                                                <label><input type="checkbox" name="fullyFurnished"> Stove</label>
-                                                <label><input type="checkbox" name="fullyFurnished" value="tv">
-                                                    Fridge</label>
-                                                <label><input type="checkbox" name="fullyFurnished" value="beds">
-                                                    Microwave </label>
-                                                <label><input type="checkbox" name="fullyFurnished" value="wardrobe">
-                                                    Modular Kitchen</label>
-                                                <label><input type="checkbox" name="fullyFurnished" value="geyser">
-                                                    Chimney</label>
-                                                <label><input type="checkbox" name="fullyFurnished" value="geyser">
-                                                    Curtains</label>
-                                                <label><input type="checkbox" name="fullyFurnished" value="geyser">
-                                                    Dinning Table</label>
-                                                <label><input type="checkbox" name="fullyFurnished" value="geyser">
-                                                    Exhaust Fan</label>
+                                    <div id="furnishingPopup" class="popup-modal">
+                                        <div class="popup-modal-content">
+                                            <span class="close">&times;</span>
+                                            <div id="popupContent" class="popup-content">
+                                                <!-- Content of the popup will be loaded here -->
+
+                                                <div class="property-form-group furnishing">
+
+                                                    <div class="property-form-group furnishing-1"
+                                                        id="fully-furnished-items" style="display: none;">
+                                                        <label for="property-FullyFurnished">Fully furnished</label>
+                                                        <div class="checkbox-container">
+                                                            <label><input type="checkbox" name="fullyFurnished"
+                                                                    value="sofa">
+                                                                sofa</label>
+                                                            <label><input type="checkbox" name="fullyFurnished"
+                                                                    value="Washing Machine">
+                                                                Washing Machine</label>
+                                                            <label><input type="checkbox" name="fullyFurnished">
+                                                                Stove</label>
+                                                            <label><input type="checkbox" name="fullyFurnished"
+                                                                    value="tv">
+                                                                Fridge</label>
+                                                            <label><input type="checkbox" name="fullyFurnished"
+                                                                    value="beds">
+                                                                Microwave </label>
+                                                            <label><input type="checkbox" name="fullyFurnished"
+                                                                    value="wardrobe">
+                                                                Modular Kitchen</label>
+                                                            <label><input type="checkbox" name="fullyFurnished"
+                                                                    value="geyser">
+                                                                Chimney</label>
+                                                            <label><input type="checkbox" name="fullyFurnished"
+                                                                    value="geyser">
+                                                                Curtains</label>
+                                                            <label><input type="checkbox" name="fullyFurnished"
+                                                                    value="geyser">
+                                                                Dinning Table</label>
+                                                            <label><input type="checkbox" name="fullyFurnished"
+                                                                    value="geyser">
+                                                                Exhaust Fan</label>
+                                                        </div>
+                                                        <div class="checkbox-container">
+                                                            <div class="quantity-container">
+                                                                <label for="fullyFurnished8">Light</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('fullyFurnished8')">-</button>
+                                                                <input type="number" id="fullyFurnished8"
+                                                                    name="fullyFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('fullyFurnished8')">+</button>
+                                                            </div>
+                                                            <div class="quantity-container">
+                                                                <label for="fullyFurnished9"> Fans</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('fullyFurnished9')">-</button>
+                                                                <input type="number" id="fullyFurnished9"
+                                                                    name="fullyFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('fullyFurnished9')">+</button>
+                                                            </div>
+                                                            <div class="quantity-container">
+                                                                <label for="fullyFurnished10"> AC</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('fullyFurnished10')">-</button>
+                                                                <input type="number" id="fullyFurnished10"
+                                                                    name="fullyFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('fullyFurnished10')">+</button>
+                                                            </div>
+                                                            <div class="quantity-container">
+                                                                <label for="fullyFurnished11"> TV</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('fullyFurnished11')">-</button>
+                                                                <input type="number" id="fullyFurnished11"
+                                                                    name="fullyFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('fullyFurnished11')">+</button>
+                                                            </div>
+                                                            <div class="quantity-container">
+                                                                <label for="fullyFurnished12">Beds</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('fullyFurnished12')">-</button>
+                                                                <input type="number" id="fullyFurnished12"
+                                                                    name="fullyFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('fullyFurnished12')">+</button>
+                                                            </div>
+                                                            <div class="quantity-container">
+                                                                <label for="fullyFurnished13"> Water Purifier</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('fullyFurnished13')">-</button>
+                                                                <input type="number" id="fullyFurnished13"
+                                                                    name="fullyFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('fullyFurnished13')">+</button>
+                                                            </div>
+                                                            <div class="quantity-container">
+                                                                <label for="fullyFurnished14"> Wardrobe</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('fullyFurnished14')">-</button>
+                                                                <input type="number" id="fullyFurnished14"
+                                                                    name="fullyFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('fullyFurnished14')">+</button>
+                                                            </div>
+                                                            <div class="quantity-container">
+                                                                <label for="fullyFurnished15">Geyser</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('fullyFurnished15')">-</button>
+                                                                <input type="number" id="fullyFurnished15"
+                                                                    name="fullyFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('fullyFurnished15')">+</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="property-form-group furnishing-1"
+                                                        id="semi-furnished-items" style="display: none;">
+                                                        <label for="property-SemiFurnished">Semi furnished</label>
+                                                        <div class="checkbox-container">
+                                                            <label><input type="checkbox" name="semiFurnished"
+                                                                    value="Sofa">
+                                                                Sofa </label>
+                                                            <label><input type="checkbox" name="semiFurnished"
+                                                                    value="Washing Machine">
+                                                                Washing Machine </label>
+                                                            <label><input type="checkbox" name="semiFurnished"
+                                                                    value="Stove">Stove
+                                                            </label>
+                                                            <label><input type="checkbox" name="semiFurnished"
+                                                                    value="Fridge">Fridge</label>
+                                                            <label><input type="checkbox" name="semiFurnished"
+                                                                    value="beds">Water
+                                                                Purifier </label>
+                                                            <label><input type="checkbox" name="semiFurnished"
+                                                                    value="wardrobe">
+                                                                Microwave </label>
+                                                            <label><input type="checkbox" name="semiFurnished"
+                                                                    value="Modular Kitchen">
+                                                                Modular Kitchen </label>
+                                                            <label><input type="checkbox" name="semiFurnished"
+                                                                    value="Chimney">
+                                                            </label>
+                                                            <label><input type="checkbox" name="semiFurnished"
+                                                                    value="Curtains">
+                                                                Curtains</label>
+                                                            <label><input type="checkbox" name="semiFurnished"
+                                                                    value="Dinning Table">
+                                                                Dinning Table</label>
+                                                            <label><input type="checkbox" name="semiFurnished"
+                                                                    value="Exhaust Fan">
+                                                                Exhaust Fan</label>
+                                                        </div>
+                                                        <div class="checkbox-container">
+                                                            <div class="quantity-container">
+                                                                <label for="semiFurnished8">Light</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('semiFurnished8')">-</button>
+                                                                <input type="number" id="semiFurnished8"
+                                                                    name="semiFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('semiFurnished8')">+</button>
+                                                            </div>
+                                                            <div class="quantity-container">
+                                                                <label for="semiFurnished9"> Fans</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('semiFurnished9')">-</button>
+                                                                <input type="number" id="semiFurnished9"
+                                                                    name="semiFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('semiFurnished9')">+</button>
+                                                            </div>
+                                                            <div class="quantity-container">
+                                                                <label for="semiFurnished10">AC</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('semiFurnished10')">-</button>
+                                                                <input type="number" id="semiFurnished10"
+                                                                    name="semiFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('semiFurnished10')">+</button>
+                                                            </div>
+                                                            <div class="quantity-container">
+                                                                <label for="semiFurnished11">TV</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('semiFurnished11')">-</button>
+                                                                <input type="number" id="semiFurnished11"
+                                                                    name="semiFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('semiFurnished11')">+</button>
+                                                            </div>
+                                                            <div class="quantity-container">
+                                                                <label for="semiFurnished12"> Beds </label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('semiFurnished12')">-</button>
+                                                                <input type="number" id="semiFurnished12"
+                                                                    name="semiFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('semiFurnished12')">+</button>
+                                                            </div>
+                                                            <div class="quantity-container">
+                                                                <label for="semiFurnished13"> Wardrobe</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('semiFurnished13')">-</button>
+                                                                <input type="number" id="semiFurnished13"
+                                                                    name="semiFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('semiFurnished13')">+</button>
+                                                            </div>
+                                                            <div class="quantity-container">
+                                                                <label for="semiFurnished14"> Geyser</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity('semiFurnished14')">-</button>
+                                                                <input type="number" id="semiFurnished14"
+                                                                    name="semiFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity('semiFurnished14')">+</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="property-form-group furnishing-1" id="unfurnished-items"
+                                                        style="display: none;">
+                                                        <label for="property-Unfurnished">Unfurnished</label>
+                                                        <!-- Add any specific unfurnished items here if needed -->
+                                                    </div>
+
+                                                </div>
                                             </div>
-                                            <div class="checkbox-container">
-                                                <div class="quantity-container">
-                                                    <label for="fullyFurnished8">Light</label>
-                                                    <button onclick="decreaseQuantity('fullyFurnished8')">-</button>
-                                                    <input type="number" id="fullyFurnished8" name="fullyFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('fullyFurnished8')">+</button>
-                                                </div>
-                                                <div class="quantity-container">
-                                                    <label for="fullyFurnished9"> Fans</label>
-                                                    <button onclick="decreaseQuantity('fullyFurnished9')">-</button>
-                                                    <input type="number" id="fullyFurnished9" name="fullyFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('fullyFurnished9')">+</button>
-                                                </div>
-                                                <div class="quantity-container">
-                                                    <label for="fullyFurnished10"> AC</label>
-                                                    <button onclick="decreaseQuantity('fullyFurnished10')">-</button>
-                                                    <input type="number" id="fullyFurnished10" name="fullyFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('fullyFurnished10')">+</button>
-                                                </div>
-                                                <div class="quantity-container">
-                                                    <label for="fullyFurnished11"> TV</label>
-                                                    <button onclick="decreaseQuantity('fullyFurnished11')">-</button>
-                                                    <input type="number" id="fullyFurnished11" name="fullyFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('fullyFurnished11')">+</button>
-                                                </div>
-                                                <div class="quantity-container">
-                                                    <label for="fullyFurnished12">Beds</label>
-                                                    <button onclick="decreaseQuantity('fullyFurnished12')">-</button>
-                                                    <input type="number" id="fullyFurnished12" name="fullyFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('fullyFurnished12')">+</button>
-                                                </div>
-                                                <div class="quantity-container">
-                                                    <label for="fullyFurnished13"> Water Purifier</label>
-                                                    <button onclick="decreaseQuantity('fullyFurnished13')">-</button>
-                                                    <input type="number" id="fullyFurnished13" name="fullyFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('fullyFurnished13')">+</button>
-                                                </div>
-                                                <div class="quantity-container">
-                                                    <label for="fullyFurnished14"> Wardrobe</label>
-                                                    <button onclick="decreaseQuantity('fullyFurnished14')">-</button>
-                                                    <input type="number" id="fullyFurnished14" name="fullyFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('fullyFurnished14')">+</button>
-                                                </div>
-                                                <div class="quantity-container">
-                                                    <label for="fullyFurnished15">Geyser</label>
-                                                    <button onclick="decreaseQuantity('fullyFurnished15')">-</button>
-                                                    <input type="number" id="fullyFurnished15" name="fullyFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('fullyFurnished15')">+</button>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="property-form-group furnishing-1" id="semi-furnished-items"
-                                            style="display: none;">
-                                            <label for="property-SemiFurnished">Semi furnished</label>
-                                            <div class="checkbox-container">
-                                                <label><input type="checkbox" name="semiFurnished" value="Sofa">
-                                                    Sofa </label>
-                                                <label><input type="checkbox" name="semiFurnished"
-                                                        value="Washing Machine">
-                                                    Washing Machine </label>
-                                                <label><input type="checkbox" name="semiFurnished" value="Stove">Stove
-                                                </label>
-                                                <label><input type="checkbox" name="semiFurnished"
-                                                        value="Fridge">Fridge</label>
-                                                <label><input type="checkbox" name="semiFurnished" value="beds">Water
-                                                    Purifier </label>
-                                                <label><input type="checkbox" name="semiFurnished" value="wardrobe">
-                                                    Microwave </label>
-                                                <label><input type="checkbox" name="semiFurnished"
-                                                        value="Modular Kitchen">
-                                                    Modular Kitchen </label>
-                                                <label><input type="checkbox" name="semiFurnished" value="Chimney">
-                                                </label>
-                                                <label><input type="checkbox" name="semiFurnished" value="Curtains">
-                                                    Curtains</label>
-                                                <label><input type="checkbox" name="semiFurnished"
-                                                        value="Dinning Table">
-                                                    Dinning Table</label>
-                                                <label><input type="checkbox" name="semiFurnished" value="Exhaust Fan">
-                                                    Exhaust Fan</label>
-                                            </div>
-                                            <div class="checkbox-container">
-                                                <div class="quantity-container">
-                                                    <label for="semiFurnished8">Light</label>
-                                                    <button onclick="decreaseQuantity('semiFurnished8')">-</button>
-                                                    <input type="number" id="semiFurnished8" name="semiFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('semiFurnished8')">+</button>
-                                                </div>
-                                                <div class="quantity-container">
-                                                    <label for="semiFurnished9"> Fans</label>
-                                                    <button onclick="decreaseQuantity('semiFurnished9')">-</button>
-                                                    <input type="number" id="semiFurnished9" name="semiFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('semiFurnished9')">+</button>
-                                                </div>
-                                                <div class="quantity-container">
-                                                    <label for="semiFurnished10">AC</label>
-                                                    <button onclick="decreaseQuantity('semiFurnished10')">-</button>
-                                                    <input type="number" id="semiFurnished10" name="semiFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('semiFurnished10')">+</button>
-                                                </div>
-                                                <div class="quantity-container">
-                                                    <label for="semiFurnished11">TV</label>
-                                                    <button onclick="decreaseQuantity('semiFurnished11')">-</button>
-                                                    <input type="number" id="semiFurnished11" name="semiFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('semiFurnished11')">+</button>
-                                                </div>
-                                                <div class="quantity-container">
-                                                    <label for="semiFurnished12"> Beds </label>
-                                                    <button onclick="decreaseQuantity('semiFurnished12')">-</button>
-                                                    <input type="number" id="semiFurnished12" name="semiFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('semiFurnished12')">+</button>
-                                                </div>
-                                                <div class="quantity-container">
-                                                    <label for="semiFurnished13"> Wardrobe</label>
-                                                    <button onclick="decreaseQuantity('semiFurnished13')">-</button>
-                                                    <input type="number" id="semiFurnished13" name="semiFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('semiFurnished13')">+</button>
-                                                </div>
-                                                <div class="quantity-container">
-                                                    <label for="semiFurnished14"> Geyser</label>
-                                                    <button onclick="decreaseQuantity('semiFurnished14')">-</button>
-                                                    <input type="number" id="semiFurnished14" name="semiFurnished"
-                                                        value="0" readonly>
-                                                    <button onclick="increaseQuantity('semiFurnished14')">+</button>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="property-form-group furnishing-1" id="unfurnished-items"
-                                            style="display: none;">
-                                            <label for="property-Unfurnished">Unfurnished</label>
-                                            <!-- Add any specific unfurnished items here if needed -->
                                         </div>
 
                                         <!-- proper  -->
@@ -1387,171 +1444,306 @@
                                             </select>
                                         </div>
 
-                                        <div class="furnishing-content" class="furnituring-box furnituring-box1">
-        <div class="property-form-group villa-furnishing furnishing">
-            <label for="property-Furnishing">Furnishing</label>
-            <div class="chip-switcher" id="property-Furnishing">
-                <div class="chip furnishing-chip" data-value="fully-furnished">Fully furnished</div>
-                <div class="chip furnishing-chip" data-value="semi-furnished">Semi-furnished</div>
-                <div class="chip furnishing-chip" data-value="unfurnished">Unfurnished</div>
-            </div>
-        </div>
+                                        <!-- <div class="furnishing-content" class="furnituring-box furnituring-box1">
+                                            <div class="property-form-group villa-furnishing furnishing">
+                                                <label for="property-Furnishing">Furnishing</label>
+                                                <div class="chip-switcher" id="property-Furnishing">
+                                                    <div class="chip furnishing-chip" data-value="fully-furnished">
+                                                        Fullyfurnished</div>
+                                                    <div class="chip furnishing-chip" data-value="semi-furnished">
+                                                        Semi-furnished</div>
+                                                    <div class="chip furnishing-chip" data-value="unfurnished">
+                                                        Unfurnished</div>
+                                                </div>
+                                            </div> -->
 
-        <div id="furnishingPopup" class="popup-modal">
-            <div class="popup-modal-content">
-                <span class="close">&times;</span>
-                <div id="popupContent" class="popup-content">
-                    <div class="property-form-group villa-furnishing" id="fully-furnished-items" style="display: none;">
-                        <label for="property-FullyFurnished">Fully furnished</label>
-                        <div class="checkbox-container">
-                            <label><input type="checkbox" name="fullyFurnished" value="sofa"> Sofa</label>
-                            <label><input type="checkbox" name="fullyFurnished" value="washing-machine">Washing Machine</label>
-                            <label><input type="checkbox" name="fullyFurnished" value="Stove"> Stove</label>
-                            <label><input type="checkbox" name="fullyFurnished" value="Fridge"> Fridge</label>
-                            <label><input type="checkbox" name="fullyFurnished" value="Water-Purifier"> Water Purifier</label>
-                            <label><input type="checkbox" name="fullyFurnished" value="Microwave"> Microwave</label>
-                            <label><input type="checkbox" name="fullyFurnished" value="Modular-Kitchen"> Modular Kitchen</label>
-                            <label><input type="checkbox" name="fullyFurnished" value="Chimney"> Chimney</label>
-                            <label><input type="checkbox" name="fullyFurnished" value="Curtains"> Curtains</label>
-                            <label><input type="checkbox" name="fullyFurnished" value="Dinning-Table"> Dinning Table</label>
-                            <label><input type="checkbox" name="fullyFurnished" value="Exhaust-Fan"> Exhaust Fan</label>
-                        </div>
-                        <div class="quantity-container">
-                            <label for="fullyFurnished8">Light</label>
-                            <button onclick="decreaseQuantity(event, 'fullyFurnished8')">-</button>
-                            <input type="number" id="fullyFurnished8" name="fullyFurnished" value="0" readonly>
-                            <button onclick="increaseQuantity(event, 'fullyFurnished8')">+</button>
-                        </div>
-                        <div class="quantity-container">
-                            <label for="fullyFurnished9">Fans</label>
-                            <button onclick="decreaseQuantity(event, 'fullyFurnished9')">-</button>
-                            <input type="number" id="fullyFurnished9" name="fullyFurnished" value="0" readonly>
-                            <button onclick="increaseQuantity(event, 'fullyFurnished9')">+</button>
-                        </div>
-                        <div class="quantity-container">
-                            <label for="fullyFurnished10">AC</label>
-                            <button onclick="decreaseQuantity(event, 'fullyFurnished10')">-</button>
-                            <input type="number" id="fullyFurnished10" name="fullyFurnished" value="0" readonly>
-                            <button onclick="increaseQuantity(event, 'fullyFurnished10')">+</button>
-                        </div>
-                        <div class="quantity-container">
-                            <label for="fullyFurnished11">TV</label>
-                            <button onclick="decreaseQuantity(event, 'fullyFurnished11')">-</button>
-                            <input type="number" id="fullyFurnished11" name="fullyFurnished" value="0" readonly>
-                            <button onclick="increaseQuantity(event, 'fullyFurnished11')">+</button>
-                        </div>
-                        <div class="quantity-container">
-                            <label for="fullyFurnished12">Beds</label>
-                            <button onclick="decreaseQuantity(event, 'fullyFurnished12')">-</button>
-                            <input type="number" id="fullyFurnished12" name="fullyFurnished" value="0" readonly>
-                            <button onclick="increaseQuantity(event, 'fullyFurnished12')">+</button>
-                        </div>
-                        <div class="quantity-container">
-                            <label for="fullyFurnished13">Wardrobe</label>
-                            <button onclick="decreaseQuantity(event, 'fullyFurnished13')">-</button>
-                            <input type="number" id="fullyFurnished13" name="fullyFurnished" value="0" readonly>
-                            <button onclick="increaseQuantity(event, 'fullyFurnished13')">+</button>
-                        </div>
-                        <div class="quantity-container">
-                            <label for="fullyFurnished14">Geyser</label>
-                            <button onclick="decreaseQuantity(event, 'fullyFurnished14')">-</button>
-                            <input type="number" id="fullyFurnished14" name="fullyFurnished" value="0" readonly>
-                            <button onclick="increaseQuantity(event, 'fullyFurnished14')">+</button>
-                        </div>
-                    </div>
 
-                    <div class="property-form-group villa-furnishing" id="semi-furnished-items" style="display: none;">
-                        <label for="property-SemiFurnished">Semi furnished</label>
-                        <div class="checkbox-container">
-                            <label><input type="checkbox" name="semiFurnished" value="sofa">Sofa</label>
-                            <label><input type="checkbox" name="semiFurnished" value="fans">Fans</label>
-                            <label><input type="checkbox" name="semiFurnished" value="ac">AC</label>
-                            <label><input type="checkbox" name="semiFurnished" value="tv">TV</label>
-                            <label><input type="checkbox" name="semiFurnished" value="beds">Beds</label>
-                            <label><input type="checkbox" name="semiFurnished" value="wardrobe">Wardrobe</label>
-                            <label><input type="checkbox" name="semiFurnished" value="geyser">Geyser</label>
-                        </div>
-                        <div class="quantity-container">
-                            <label for="semiFurnished8">Light</label>
-                            <button onclick="decreaseQuantity(event, 'semiFurnished8')">-</button>
-                            <input type="number" id="semiFurnished8" name="semiFurnished" value="0" readonly>
-                            <button onclick="increaseQuantity(event, 'semiFurnished8')">+</button>
-                        </div>
-                        <div class="quantity-container">
-                            <label for="semiFurnished9">Fans</label>
-                            <button onclick="decreaseQuantity(event, 'semiFurnished9')">-</button>
-                            <input type="number" id="semiFurnished9" name="semiFurnished" value="0" readonly>
-                            <button onclick="increaseQuantity(event, 'semiFurnished9')">+</button>
-                        </div>
-                        <div class="quantity-container">
-                            <label for="semiFurnished10">AC</label>
-                            <button onclick="decreaseQuantity(event, 'semiFurnished10')">-</button>
-                            <input type="number" id="semiFurnished10" name="semiFurnished" value="0" readonly>
-                            <button onclick="increaseQuantity(event, 'semiFurnished10')">+</button>
-                        </div>
-                        <div class="quantity-container">
-                            <label for="semiFurnished11">TV</label>
-                            <button onclick="decreaseQuantity(event, 'semiFurnished11')">-</button>
-                            <input type="number" id="semiFurnished11" name="semiFurnished" value="0" readonly>
-                            <button onclick="increaseQuantity(event, 'semiFurnished11')">+</button>
-                        </div>
-                        <div class="quantity-container">
-                            <label for="semiFurnished12">Beds</label>
-                            <button onclick="decreaseQuantity(event, 'semiFurnished12')">-</button>
-                            <input type="number" id="semiFurnished12" name="semiFurnished" value="0" readonly>
-                            <button onclick="increaseQuantity(event, 'semiFurnished12')">+</button>
-                        </div>
-                        <div class="quantity-container">
-                            <label for="semiFurnished13">Wardrobe</label>
-                            <button onclick="decreaseQuantity(event, 'semiFurnished13')">-</button>
-                            <input type="number" id="semiFurnished13" name="semiFurnished" value="0" readonly>
-                            <button onclick="increaseQuantity(event, 'semiFurnished13')">+</button>
-                        </div>
-                        <div class="quantity-container">
-                            <label for="semiFurnished14">Geyser</label>
-                            <button onclick="decreaseQuantity(event, 'semiFurnished14')">-</button>
-                            <input type="number" id="semiFurnished14" name="semiFurnished" value="0" readonly>
-                            <button onclick="increaseQuantity(event, 'semiFurnished14')">+</button>
-                        </div>
-                    </div>
 
-                    <div class="property-form-group villa-furnishing" id="unfurnished-items" style="display: none;">
-                        <label for="property-Unfurnished">Unfurnished</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-
-                                        <div class="property-form-group">
-                                            <label for="property-brokrage">Do you have more similar units/properties
-                                                availaible ? </label>
-                                            <div class="d-flex" style="column-gap: 18px;">
-                                                <input type="radio" id="age1" name="age" value="yes">
-                                                <label for="brokrageYes">Yes</label>
-                                                <input type="radio" id="age2" name="age" value="No">
-                                                <label for="brokrageNo">No</label>
+                                            <div class="property-form-group furnishing">
+                                                <label for="property-Furnishing">Furnishing</label>
+                                                <div class="chip-switcher" id="property-Furnishing">
+                                                    <div class="chip furnishing-chip" data-value="fully-furnished">Fully
+                                                        furnished</div>
+                                                    <div class="chip furnishing-chip" data-value="semi-furnished">
+                                                        Semi-furnished</div>
+                                                    <div class="chip furnishing-chip" data-value="unfurnished">
+                                                        Unfurnished</div>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class=" authority-chips">
-                                            <label for="authority">Approval authority</label>
-                                            <input type="radio" id="lda-4" name="authority" value="LDA">
-                                            <label class="chip" for="lda-4">LDA</label>
+                                            <div id="furnishingPopup" class="popup-modal">
+                                                <div class="popup-modal-content">
+                                                    <span class="close">&times;</span>
+                                                    <div id="popupContent" class="popup-content">
+                                                        <!-- Content of the popup will be loaded here -->
+                                                        <div class="property-form-group furnishing-1"
+                                                            id="fully-furnished-items" style="display: none;">
+                                                            <label for="property-FullyFurnished">Fully furnished</label>
+                                                            <div class="checkbox-container">
+                                                                <!-- Fully furnished checkbox options -->
+                                                                <label><input type="checkbox" name="fullyFurnished"
+                                                                        value="sofa">
+                                                                    Sofa</label>
+                                                                <label><input type="checkbox" name="fullyFurnished"
+                                                                        value="washing-machine">washing machine </label>
+                                                                <label><input type="checkbox" name="fullyFurnished"
+                                                                        value="Stove">
+                                                                    Stove</label>
+                                                                <label><input type="checkbox" name="fullyFurnished"
+                                                                        value="Fridge">
+                                                                    Fridge</label>
+                                                                <label><input type="checkbox" name="fullyFurnished"
+                                                                        value="Water-Purifier">
+                                                                    Water Purifier</label>
+                                                                <label><input type="checkbox" name="fullyFurnished"
+                                                                        value="Microwave">
+                                                                    Microwave</label>
+                                                                <label><input type="checkbox" name="fullyFurnished"
+                                                                        value="Modular-Kitchen">
+                                                                    Modular Kitchen</label>
+                                                                <label><input type="checkbox" name="fullyFurnished"
+                                                                        value="Chimney">
+                                                                    Chimney</label>
+                                                                <label><input type="checkbox" name="fullyFurnished"
+                                                                        value="Curtains">
+                                                                    Curtains</label>
+                                                                <label><input type="checkbox" name="fullyFurnished"
+                                                                        value="Dinning-Table">
+                                                                    Dinning Table</label>
+                                                                <label><input type="checkbox" name="fullyFurnished"
+                                                                        value="Chimney">
+                                                                    Chimney</label>
+                                                                <label><input type="checkbox" name="fullyFurnished"
+                                                                        value="Exhaust-Fan">Exhaust Fan</label>
 
-                                            <input type="radio" id="awas-vikas-4" name="authority" value="Awas Vikas">
-                                            <label class="chip" for="awas-vikas-4">Awas Vikas</label>
-                                        </div>
+                                                            </div>
+                                                            <div class="quantity-container">
+                                                                <label><input type="checkbox" name="fullyFurnished"
+                                                                        value="light">
+                                                                    Light</label>
+                                                                <button
+                                                                    onclick="decreaseQuantity(event, 'fullyFurnished8')">-</button>
+                                                                <input type="number" id="fullyFurnished8"
+                                                                    name="fullyFurnished" value="0" readonly>
+                                                                <button
+                                                                    onclick="increaseQuantity(event, 'fullyFurnished8')">+</button>
 
-                                        <div class="property-form-group">
-                                            <label for="description-Builder-text">Property Description</label>
-                                            <textarea id="description-Builder-text"
-                                                style="padding-right: 4rem; border: 2px solid #ccc; width: 100%; height: 100%;"></textarea>
+                                                                <div class="quantity-container">
+                                                                    <label for="fullyFurnished9">+ Fans</label>
+                                                                    <button
+                                                                        onclick="decreaseQuantity(event, 'fullyFurnished9')">-</button>
+                                                                    <input type="number" id="fullyFurnished9"
+                                                                        name="fullyFurnished" value="0" readonly>
+                                                                    <button
+                                                                        onclick="increaseQuantity(event, 'fullyFurnished9')">+</button>
+                                                                </div>
+
+                                                                <!-- Repeat for other items with quantity -->
+                                                                <div class="quantity-container">
+                                                                    <label for="fullyFurnished10">AC</label>
+                                                                    <button
+                                                                        onclick="decreaseQuantity(event, 'fullyFurnished10')">-</button>
+                                                                    <input type="number" id="fullyFurnished10"
+                                                                        name="fullyFurnished" value="0" readonly>
+                                                                    <button
+                                                                        onclick="increaseQuantity(event, 'fullyFurnished10')">+</button>
+                                                                </div>
+
+                                                                <div class="quantity-container">
+                                                                    <label for="fullyFurnished11">TV</label>
+                                                                    <button
+                                                                        onclick="decreaseQuantity(event, 'fullyFurnished11')">-</button>
+                                                                    <input type="number" id="fullyFurnished11"
+                                                                        name="fullyFurnished" value="0" readonly>
+                                                                    <button
+                                                                        onclick="increaseQuantity(event, 'fullyFurnished11')">+</button>
+                                                                </div>
+
+                                                                <div class="quantity-container">
+                                                                    <label for="fullyFurnished12">Beds</label>
+                                                                    <button
+                                                                        onclick="decreaseQuantity(event, 'fullyFurnished12')">-</button>
+                                                                    <input type="number" id="fullyFurnished12"
+                                                                        name="fullyFurnished" value="0" readonly>
+                                                                    <button
+                                                                        onclick="increaseQuantity(event, 'fullyFurnished12')">+</button>
+                                                                </div>
+
+                                                                <div class="quantity-container">
+                                                                    <label for="fullyFurnished13">Wardrobe</label>
+                                                                    <button
+                                                                        onclick="decreaseQuantity(event, 'fullyFurnished13')">-</button>
+                                                                    <input type="number" id="fullyFurnished13"
+                                                                        name="fullyFurnished" value="0" readonly>
+                                                                    <button
+                                                                        onclick="increaseQuantity(event, 'fullyFurnished13')">+</button>
+                                                                </div>
+                                                                <div class="quantity-container">
+                                                                    <label for="fullyFurnished14">Geyser</label>
+                                                                    <button
+                                                                        onclick="decreaseQuantity(event, 'fullyFurnished14')">-</button>
+                                                                    <input type="number" id="fullyFurnished14"
+                                                                        name="fullyFurnished" value="0" readonly>
+                                                                    <button
+                                                                        onclick="increaseQuantity(event, 'fullyFurnished14')">+</button>
+                                                                </div>
+
+
+
+
+
+                                                            </div>
+
+
+                                                        </div>
+
+
+                                                        <div class="property-form-group furnishing-1"
+                                                            id="semi-furnished-items" style="display: none;">
+                                                            <label for="property-SemiFurnished">Semi furnished</label>
+                                                            <div class="checkbox-container">
+                                                                <!-- Semi furnished checkbox options -->
+                                                                <label><input type="checkbox" name="semiFurnished"
+                                                                        value="sofa">Sofa</label>
+                                                                <label><input type="checkbox" name="semiFurnished"
+                                                                        value="fans">Fans</label>
+                                                                <label><input type="checkbox" name="semiFurnished"
+                                                                        value="ac">AC</label>
+                                                                <label><input type="checkbox" name="semiFurnished"
+                                                                        value="tv">TV</label>
+                                                                <label><input type="checkbox" name="semiFurnished"
+                                                                        value="beds">Beds</label>
+                                                                <label><input type="checkbox" name="semiFurnished"
+                                                                        value="wardrobe">Wardrobe</label>
+                                                                <label><input type="checkbox" name="semiFurnished"
+                                                                        value="geyser">Geyser</label>
+                                                            </div>
+                                                            <div class="quantity-container-box">
+                                                                <!-- Quantity input fields -->
+
+                                                                <div class="quantity-container">
+                                                                    <label><input type="checkbox" name="semiFurnished"
+                                                                            value="light">
+                                                                        Light </label>
+                                                                    <button
+                                                                        onclick="decreaseQuantity(event, 'semiFurnished8')">-</button>
+                                                                    <input type="number" id="semiFurnished8"
+                                                                        name="semiFurnished" value="0" readonly>
+                                                                    <button
+                                                                        onclick="increaseQuantity(event, 'semiFurnished8')">+</button>
+                                                                </div>
+
+                                                                <div class="quantity-container">
+                                                                    <label for="semiFurnished9">Fans</label>
+                                                                    <button
+                                                                        onclick="decreaseQuantity(event, 'semiFurnished9')">-</button>
+                                                                    <input type="number" id="semiFurnished9"
+                                                                        name="semiFurnished" value="0" readonly>
+                                                                    <button
+                                                                        onclick="increaseQuantity(event, 'semiFurnished9')">+</button>
+                                                                </div>
+
+                                                                <div class="quantity-container">
+                                                                    <label for="semiFurnished10">AC</label>
+                                                                    <button
+                                                                        onclick="decreaseQuantity(event, 'semiFurnished10')">-</button>
+                                                                    <input type="number" id="semiFurnished10"
+                                                                        name="semiFurnished" value="0" readonly>
+                                                                    <button
+                                                                        onclick="increaseQuantity(event, 'semiFurnished10')">+</button>
+                                                                </div>
+
+                                                                <div class="quantity-container">
+                                                                    <label for="semiFurnished11">TV</label>
+                                                                    <button
+                                                                        onclick="decreaseQuantity(event, 'semiFurnished11')">-</button>
+                                                                    <input type="number" id="semiFurnished11"
+                                                                        name="semiFurnished" value="0" readonly>
+                                                                    <button
+                                                                        onclick="increaseQuantity(event, 'semiFurnished11')">+</button>
+                                                                </div>
+
+                                                                <div class="quantity-container">
+                                                                    <label for="semiFurnished12">Beds</label>
+                                                                    <button
+                                                                        onclick="decreaseQuantity(event, 'semiFurnished12')">-</button>
+                                                                    <input type="number" id="semiFurnished12"
+                                                                        name="semiFurnished" value="0" readonly>
+                                                                    <button
+                                                                        onclick="increaseQuantity(event, 'semiFurnished12')">+</button>
+                                                                </div>
+
+                                                                <div class="quantity-container">
+                                                                    <label for="semiFurnished13">Wardrobe</label>
+                                                                    <button
+                                                                        onclick="decreaseQuantity(event, 'semiFurnished13')">-</button>
+                                                                    <input type="number" id="semiFurnished13"
+                                                                        name="semiFurnished" value="0" readonly>
+                                                                    <button
+                                                                        onclick="increaseQuantity(event, 'semiFurnished13')">+</button>
+                                                                </div>
+
+                                                                <div class="quantity-container">
+                                                                    <label for="semiFurnished14">Geyser</label>
+                                                                    <button
+                                                                        onclick="decreaseQuantity(event, 'semiFurnished14')">-</button>
+                                                                    <input type="number" id="semiFurnished14"
+                                                                        name="semiFurnished" value="0" readonly>
+                                                                    <button
+                                                                        onclick="increaseQuantity(event, 'semiFurnished14')">+</button>
+                                                                </div>
+
+
+
+
+
+
+
+
+
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="property-form-group furnishing-1"
+                                                            id="unfurnished-items" style="display: none;">
+                                                            <label for="property-Unfurnished">Unfurnished</label>
+                                                            <!-- Add any specific unfurnished items here if needed -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="property-form-group">
+                                                <label for="property-brokrage">Do you have more similar units/properties
+                                                    availaible ? </label>
+                                                <div class="d-flex" style="column-gap: 18px;">
+                                                    <input type="radio" id="age1" name="age" value="yes">
+                                                    <label for="brokrageYes">Yes</label>
+                                                    <input type="radio" id="age2" name="age" value="No">
+                                                    <label for="brokrageNo">No</label>
+                                                </div>
+                                            </div>
+
+                                            <div class=" authority-chips">
+                                                <label for="authority">Approval authority</label>
+                                                <input type="radio" id="lda-4" name="authority" value="LDA">
+                                                <label class="chip" for="lda-4">LDA</label>
+
+                                                <input type="radio" id="awas-vikas-4" name="authority"
+                                                    value="Awas Vikas">
+                                                <label class="chip" for="awas-vikas-4">Awas Vikas</label>
+                                            </div>
+
+                                            <div class="property-form-group">
+                                                <label for="description-Builder-text">Property Description</label>
+                                                <textarea id="description-Builder-text"
+                                                    style="padding-right: 4rem; border: 2px solid #ccc; width: 100%; height: 100%;"></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </form>
 
                     <div class="button-container">
@@ -2507,6 +2699,7 @@
     <!-- <script src="js/script.js"></script> -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/model.js"></script>
 </body>
 
 </html>
